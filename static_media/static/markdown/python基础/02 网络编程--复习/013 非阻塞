@@ -1,0 +1,40 @@
+```python
+import socket
+
+tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+tcp_socket.bind(("", 80))
+
+tcp_socket.listen(128)
+
+tcp_socket.setblocking(False)  # 设置套接字为非阻塞
+
+server_socket_list = []  # 如果连接池到达了上线，禁止append，稍后访问
+
+while True:
+    try:
+        server_socket, client_addr = tcp_socket.accept()
+    except Exception:
+        pass  # 没有客户端到来，accept()没有返回值，抛出异常
+    else:
+        # 没有异常，执行else，有客户端到来,
+        server_socket.setblocking(False)  # 非阻塞
+        server_socket_list.append(server_socket)  # server_socket池
+
+    for pool_socket in server_socket_list:  # list没有数据直接跳过
+        try:
+            recv_data = pool_socket.recv(1024)
+        except Exception:
+            # 客户端没有发送数据，recv阻塞，没有返回值
+            pass
+        else:
+            # recv解阻塞
+            if len(recv_data) != 0 and recv_data.decode("utf-8") != "exit":  # 有数据
+                print(recv_data.decode("utf-8"))
+            else:  # 没有数据:断开了连接
+                # 更新连接池
+                server_socket_list.remove(pool_socket)
+                # 关闭socket
+                pool_socket.close()
+```
+

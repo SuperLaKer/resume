@@ -1,0 +1,86 @@
+```
+import time;	every_name = __import__("time")
+f.writable()  # 能不能写
+help()
+callable()
+```
+
+```python
+id(变量)  # 查看变量应用的数据的地址
+hash()  # 可哈希类型，不可哈希类型
+# 程序每次重新运行，所得的hash值不一样
+print(hash(123))
+print(hash("你好"))
+print(hash([1, 2, 3]))  # 不可哈希，可变类型
+```
+
+#### 数学运算
+
+```python
+divmod(8, 3)  # 上2余2
+round(3.1415926, 3)  # 保留三位小数
+
+pow(2, 3)  # 幂运算
+pow(2, 3, 3)  # 幂运算取余  8%3
+# sum(),参数只能是iterable最多加上个start
+sum(iterbale)  # iterable元素能转化为数字类型
+sum([1, 2, 3])  # 6
+sum([1, 2, 3], 10)  # 16
+
+max(1, 2, 3, -4, key=abs)  # 绝对值最大值
+min([2, 3, 1, 5, 0])  # 0，接收的类型比较多
+```
+
+```
+print(1, 2, 3, sep="|")  # 输出多个值得分隔符
+f = open("file.txt", "w")
+print("aaa", file=f)
+f.close()
+```
+
+```
+exec 和 eval
+eval执行字符串代码，返回结果
+exec执行字符串代码，不返回结果，除非”代码“中有print
+```
+
+#### 剩余几个
+
+```python
+list.reverse()  # 原来的lsit基础上直接翻转
+list_iter = reversed(list1)  # 返回一个逆序的迭代器
+
+reversed()  # 返回迭代器
+sorted()  # 直接返回新list
+
+sli_method = slice(1, 5, 2)  # 切片规则
+print(list[sli_method])
+print(list[1:5:2])
+
+
+print(format("句子", "<20"))  # 总行宽20，左对齐
+print(format("句子", "<40"))  # 总行宽40，右对齐
+print(format("句子", "^60"))  # 总行宽20，居中··
+# 转换为bytes类
+bytes("你好"， encode="utf-8")  # unicode转化为utf-8的bytes
+bytes("你好"， encode="utf-8")  # unicode转化为gbk的bytes
+
+```
+
+```
+print(ord("a"))  # 97,转化为unicode的编码
+print(chr(97))  # 按照unicode解码
+```
+
+```
+# repr
+name = "小明"
+print("你好%s" % name)  # 你好小明
+print("你好%r" % name)  # 你好"小明"
+```
+
+```
+all(list)  # 别表中如果有一个为False则返回false
+any(lsit)  # True
+```
+

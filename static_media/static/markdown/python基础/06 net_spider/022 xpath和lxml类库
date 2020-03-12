@@ -1,0 +1,39 @@
+#### 什么是XPATH？
+
+​		XPath（XML Path Language）是一门在 `HTML'XML`文档中查找信息的`语言`，可以用来在`HTML和XML`文档中对`元素`和`属性`进行遍历
+
+#### XPATH和LXML类库：
+
+​       LXML是一款高性能的Python HTML/XML解析器，我们可以利用XPath，来快速的丁文特定元素以及获取节点信息
+
+#### 认识XML
+
+​		XML（Extensible Markup Language）可扩展标记语言，被设计为：`**传送`和`存储**`数据，其特点是数据的内容
+
+​		HTML（HyperText Markup Language）超文本标记语言，`显示数据`以及如更好的显示数据
+
+#### XPATH语法
+
+### XPATH学习重点
+
+- 获取文本
+  - `/html/head/title/text()`		# 获取选择title标签 里面的  内容
+  - `/a/text()`  获取`a`标签包裹着的文本
+  - `/a//text()`  获取`a`标签下所有标签的文本
+- 获取属性
+  - `/html/head/link/@href`  获取`link`的所有`href`属性
+  - `/html/head/link/@rel`   获取`link`的所有`rel`属性
+- 直接获取标签
+  - `@[属性=]`
+  - `//`表示`html`中任意位置开始选取
+  - `li//a`在`li`标签下选择`a`标签
+  - `//url[@id="detail-list"]`  快速选中  `id==detial-list` 的url标签
+  - `//url[@id="detial-list"]/li`  选中 `id`为`detial-list的``url`，下面的所有`li`
+  - 
+
+
+
+
+
+
+

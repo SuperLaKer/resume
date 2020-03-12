@@ -1,0 +1,22 @@
+```
+如果不指定cookie的有效期，默认关闭浏览器后cookie就会过期
+```
+
+```python
+from datetime import datetime, timedelta
+def set_cookie(request):
+
+    response = HttpResponse("设置cookie")
+    response.set_cookie('num', 1, max_age=14*24*3600)  # 设置两周过期
+    # response.set_cookie('num', 1, expires=datetime.new()+timeddlta(days=14))
+    
+    # return HttpResponse("")
+    return response
+```
+
+```
+Cookie以键值对的格式进行信息的存储。
+Cookie基于域名安全，不同域名的Cookie是不能互相访问的，如访问itcast.cn时向浏览器中写了Cookie信息，使用同一浏览器访问baidu.com时，无法访问到itcast.cn写的Cookie信息。
+当浏览器请求某网站时，会将浏览器存储的跟网站相关的所有Cookie信息提交给网站服务器
+```
+

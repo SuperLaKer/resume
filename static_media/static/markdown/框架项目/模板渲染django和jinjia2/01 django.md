@@ -1,0 +1,68 @@
+例如：{{book.0}}
+
+1)  首先把book当成一个字典，把0当成键名，进行取值book[0]
+
+2)  把book当成一个列表，把0当成下标，进行取值book[0]
+
+3）如果解析失败，则产生内容时用空字符串填充模板变量。
+
+#### 使用模板变量时，. 前面的可能是一个字典，可能是一个对象，还可能是一个列表。
+
+```python
+def index(request):
+    ip = request.META["REMOTE_ADDR"]
+    print(ip)
+    my_dict = {'key': 'hahaha', "ip": ip}
+    my_list = [{'key': 'hahaha', "ip": ip}, {'key': 'hahaha', "ip": ip}]
+    context = {"my_dict": my_dict, "my_list": my_list}
+    return render(request, "ip_block.html", context)
+    
+    # return render(request, "ip_block.html", {"context": context})
+```
+
+```html
+<h1>lalala</h1>
+{{ my_dict.key }}
+{{ my_dict.ip }}
+{{ my_list.1 }}
+
+{% for dict in my_list %}
+
+    <li>{{ dict.key }}</li>
+    <li>{{ dict.ip }}</li>
+
+{% endfor %}
+```
+
+```
+{% for book in books %}
+
+<li>{{ book.title }}</li>
+
+{% endfor %}
+```
+
+```
+<li>{{ forloop.counter }}{{ book.title }}</li>  //forloop.counter从0开始加
+```
+
+#### 比较
+
+```
+关系比较：> < >= <= == !=
+比较符号两边必须有空格
+运算符：not and or
+```
+
+```
+{% for book in books,  %}
+	{% if book.id < 2 %}
+		<li class=".red"> {{ forloop.counter }}--{{ book.title }} </li>
+	{% else if book.id <=5 %}
+		<li class=".green"> {{ forloop.counter }}--{{ book.title }} </li>
+	{% else %}
+		<li class=".purpple"> {{ forloop.counter }}--{{ book.title }} </li>
+	{% endif %}
+{% endfor %}
+
+```

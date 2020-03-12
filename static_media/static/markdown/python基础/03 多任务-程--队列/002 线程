@@ -1,0 +1,34 @@
+## 线程：操作系统调度的单位
+
+如果只有一个线程，执行完，就要等待n个其他的线程
+
+如果有多个线程，时间片轮转会缩短，这个进程就会多次执行
+
+一定条件下，流水线上，工人越多，这条进程执行效率越高
+
+```
+资源共享
+如果资源不共享，就不能体现多任务的优势
+一个线程下载，一个线程播放
+边下载，边播放，
+抓取--处理--展现，同时做
+```
+
+
+
+```python
+import threading
+from multiprocessing import Process
+def dance(what):
+    print(what)
+    time.sleep(2)
+    
+def dance():
+    print("dance")
+    time.sleep(2)
+    
+    t2 = threading.Thread(target=dance)  
+    t2 = threading.Thread(target=sing, args=("love is over", )) # 可以给函数传参数
+    t2.start()
+```
+

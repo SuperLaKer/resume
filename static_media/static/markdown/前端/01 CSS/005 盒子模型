@@ -1,0 +1,36 @@
+```
+技巧
+一行文字垂直居中（line-height）
+多行垂直居中：(行高设置为字体大小)==(padding-top = x/2)==padding-buttom(不用管)
+
+首行缩进  和  padding-left
+```
+
+```html
+    <title>新闻列表</title>
+    <style type="text/css">
+        .news_tittle{
+            width: 380px;
+            height: 35px;
+            border-top: 1px #f00 solid;
+            border-bottom: 3px #666 solid;
+            font-size: 20px;
+            line-height: 20px;
+            font-family: "Microsoft YaHei";
+            color: #333;
+            font-weight: bold;
+            font-weight: normal;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="news_tittle">新闻类表</div>
+<br />
+<!--一行居中line-height == width-->
+<!-- padding left == text-indent 首行缩进-->
+<div class="news_tittle">新闻类表</div>
+</body>
+```
+

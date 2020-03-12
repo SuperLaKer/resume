@@ -1,0 +1,44 @@
+#### .XPATH的包含
+
+- `//div[contains(@class, 'i')]`  选中`class`属性包含`i`的`div`
+
+#### 实现爬虫的套路
+
+- 准备`url_list`
+  - 明确页码总数，url地址规律明显
+- 准备`start_url`
+  - 地址规律不明，无法确定页码总数
+- 发送请求，获取响应
+  - 添加随机的`User-Agent`，反爬虫
+  - 添加随机的代理`IP`，反爬虫
+  - 在对方判断出我们是爬虫后，应该添加更多的`headers`字段，包括`cookie`
+  - `cookie`的处理可以使用`session`来解决（009）
+  - 准备一堆能用的`cookie`
+    - 如果不登录：
+      - 准备对方服务器设置在response中的cookie
+      - 下一次请求的时候，使用之前的列表中的cookie
+      - 如果内次`cookie`都不一样，设置另一个接收response的爬虫，添加到`list`，爬虫每次都从这个`list`中取`cookie`
+    - 如果登陆
+      - 准备多个账号
+      - 使用程序获取每个中号的cookie
+      - 之后请求 登陆之后才访问的网站随机的选择`cookie`
+- 提取数据
+  - 确定数据的位置
+    - 如果数据在当前的url中
+      - 直接请求列表页的url地址，不用进入详情页
+    - 如果在详情页
+      - 确定url地址
+      - 发送请求
+      - 提取数据
+      - 返回
+    - 如果不在当前的url地址中
+      - 在其他响应中，寻找数据的位置
+        - 从network中从上往下找
+        - 使用chrome中的过滤添加
+        - 使用chorme的seach all file，搜索数字和英文字母
+- 数据提取
+  - xpath，从htmll中提取整块数据，先分组，之后每一组提取
+  - re，提取max_time ，price，html中的json字符串
+- 保存
+  - 保存在本地，text，json，csv
+  - 保存在数据库

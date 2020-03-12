@@ -1,0 +1,42 @@
+```
+pip install requests
+```
+
+### requests中解决编码的方法
+
+- response.content.decode()
+- response.content.decode("gbk")
+- response.text
+
+### response.text和response.context的区别
+
+- response.text
+  - 类型：str
+  - 解码类型：根据HTTP头部对响应的编码做出有根据的推车，推测的文本编码
+  - 如何修改编码方式：response.encoding="gbk"
+- response.content推荐使用
+  - 类型：bytes
+  - 解码类型：没有指定
+  - 如何修改编码类型：response.context.decode("utf-8")
+
+```python
+def main():
+    urls = "https://www.sina.com.cn"
+    response = requests.get(urls)
+	# response.content 
+    print(response.content.decode())  # 自动解码
+	print(response.content.decode("gbk"))  # 手动 1步
+
+    print(response.text)  # 自动解码
+    response.encoding = "gbk"
+    print response.text  # 手动解码2步
+```
+
+```python
+print response.content.decode()  # 自动解码
+print response.content.decode("gbk")  # 自动
+print response.text
+
+# 100% 解决编码问题
+```
+

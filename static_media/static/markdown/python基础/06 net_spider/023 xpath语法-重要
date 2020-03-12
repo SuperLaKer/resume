@@ -1,0 +1,31 @@
+#### XPATH语法
+
+#### XPATH学习重点
+
+- 使用`xpath-helper`或`chorme`中的`copy`，`xpath`都是从`element`中提取数据，但是爬虫获取的是url对应的响应，往往和`elements`不一样
+- 看源码写`xpath`
+
+### xpath语法作为练习，它是以elements为准的，爬虫是url的响应，不是elements
+
+- 获取文本
+  - `/html/head/title/text()`		# 获取选择title标签 里面的  内容
+  - `/a/text()`  获取`a`标签包裹着的文本
+  - `/a//text()`  获取`a`标签下所有标签的文本
+  - `//a[text()='下一页']``/@href`
+  - `//div[@id='page']/a[last()-3]`  倒数第三个标签
+  - `//div[@id=page]/a[position()>4]`  大于4的全部选中
+- 获取属性
+  - `/html/head/link/@href`  获取`link`的所有`href`属性
+  - `/html/head/link/@rel`   获取`link`的所有`rel`属性
+- 直接获取标签
+  - `@[属性=]`
+  - `//`表示`html`中任意位置开始选取
+  - `li//a`在`li`标签下选择`a`标签
+  - `//url[@id="detail-list"]`  快速选中  `id==detial-list` 的url标签
+  - `//url[@id="detial-list"]/li`  选中 `id`为`detial-list的``url`，下面的所有`li`
+  - `//div[contains(@class, 'i')]`  选中`class`属性包含`i`的`div`
+
+
+
+
+

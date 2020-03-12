@@ -1,0 +1,15 @@
+```
+def main():
+    row = 1
+    while row <= 9:
+
+        c = 1
+        while c <= row:
+            print("%d x %d = %d" % (c, row, row * c), end="\t")
+
+            c += 1
+
+        row += 1
+        print("")
+```
+

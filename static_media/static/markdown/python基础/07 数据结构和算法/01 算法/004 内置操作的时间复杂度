@@ -1,0 +1,33 @@
+列表操作的时间复杂度
+
+```
+extend([])
+index[x]	O(1)
+index assignment	O(1) 下标处赋值
+append	O(1)	尾部追加	+=相当于append
+pop()	O(1)	弹出尾部
+pop(i)	O(n)	指定位置弹
+insert(i,item)	O(n)	某处插入元素
+del operator	O(n)	删除列表（列表由字典构成，一个key，一个key的删除）
+iteration	O(n)	迭代for操作
+contains(in)	O(n)	是否在列表中
+get slice[x:y]	O(k)	定位x（O(1)）,取到y的前一个.和x与y的关系有关
+del slice	O(n)	切片如果仅包含列表的第一个元素，后面的要向前移动，最大复杂度
+set slice	O(n+k)	li[0:3] = [2, 3, 4, 5, 6, 7]
+reverse		O(n)	逆序
+concatenate		O(k)	代表 + 把一个列表append到另一个列表后面
+sort	O(nlogn)	排序
+multiply	O(1)	列表乘li*10，10个相同的元素
+```
+
+#### 字典有固定的key
+
+```
+copy	n
+get		1	通过key
+set		1	通过key,set
+delete	1	删除键
+contains	1
+iteration	n
+```
+

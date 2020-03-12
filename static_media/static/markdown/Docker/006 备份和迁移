@@ -1,0 +1,15 @@
+#### 容器保存为镜像
+
+#### 镜像保存为压缩包
+
+```
+docker commit can_name image_name
+docker commit mysql_can mysql_image
+
+# 备份
+docker save -o mysql_image.tar.gz mysql_image 
+# 恢复
+docker rmi image_name
+docker load -i mysql_image.tar.gz
+```
+

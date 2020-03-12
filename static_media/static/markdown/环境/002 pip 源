@@ -1,0 +1,28 @@
+### linux配置
+
+- cd
+- mkdir .pip
+- cd .pip
+- touch pip.conf
+- 粘贴下面内容
+
+```
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+或输入以下：（阿里源）
+[global]  index-url=http://mirrors.aliyun.com/pypi/simple
+[install]
+trusted-host=mirrors.aliyun.com  
+disable-pip-version-check = true  
+timeout = 6000
+```
+
+### windows配置
+
+- `C:\Users\lla\AppData\Roaming`
+- mkdir pip
+- `pip.ini`
+
+#### pip升级
+
+- `python -m pip install --upgrade pip`

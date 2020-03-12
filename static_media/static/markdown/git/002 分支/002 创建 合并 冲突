@@ -1,0 +1,35 @@
+#### 查看有几个分支
+
+```
+git branch
+```
+
+#### 分支
+
+```
+创建：git branch dev  
+切换：git checkout name
+创建并切换：git checkout -b name
+合并某分支到当前分支：git merge dev  # dev合并到master
+删除分支：git branch -d name
+```
+
+#### 修改了同一个文件，双方都提交了
+
+```
+# 修改了同一个文件
+master 和 dev修改同一个文件，并都创建了提交（生成指针）
+
+当master要合并dev的时候会报冲突
+```
+
+```
+解决办法：主要的一方手动解决并提交
+```
+
+#### 双方都提交了，修改内容不冲突
+
+```
+git会提醒：创建一个 -m  
+```
+

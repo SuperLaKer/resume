@@ -1,0 +1,11 @@
+install gcc automake autoconf libtool make
+https://blog.csdn.net/somanlee/article/details/69808788
+sudo apt-get install libtool
+sudo apt-get install build-essential
+sudo apt-get install openssl
+sudo apt-get install libpcre3 libpcre3-dev
+sudo apt-get install zlib1g-dev 
+
+sudo apt-get install ruby
+sudo apt-get install zlib1g
+sudo apt-get install zlib1g.dev

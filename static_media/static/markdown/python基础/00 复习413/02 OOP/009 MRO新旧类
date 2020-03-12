@@ -1,0 +1,32 @@
+#### 多个父类
+
+- `Class ojb(Father1, Mother1):`
+
+#### 父类同名方法处理：
+
+- MRO
+
+#### MRO
+
+全称：method resolution order，方法解决（搜索）顺序
+
+`OBJ.__mro__`：返回元组
+
+#### 包的搜索路径
+
+见：标准库sys
+
+#### 新式类和经典类
+
+- 影响MRO
+- 为了保证代码的统一运行，建议继承于object
+
+- 以`object`类为：基类
+
+- `python3`中默认继承于`object`
+
+- `obj.__dir__`
+
+- 不以`object`类为：基类
+
+  

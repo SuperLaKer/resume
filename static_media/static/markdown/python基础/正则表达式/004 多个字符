@@ -1,0 +1,39 @@
+#### 匹配多个字符
+
+- `*`：前一个字符出现0次或无限次  `>= 0`
+- `+`：前一个字符出现1次或无限次  `>= 1`
+- `?`：前一个字符出现1次或0次
+- `{m}`：前一个字符出现m次  `\d{m}长度必须m位`
+- `{m,n}`：前一个字符出现m到n次   `大于8小于17`
+- `re.S`
+- `.*`  `re.match(r".*", "fdsa\n", re.S)`
+- `[^a-z]`：除了`a-z`
+- 贪婪匹配：`re.match("<.+>", <h1>hello</h1>)`  
+- 非贪婪匹配：`re.match("<.+?>", <h1>hello</h1>)`  
+
+##### 例子：第一位大写，其他的可有可无，如果有全小写
+
+```python
+result = re.match(r"[A-Z][a-z]*", "M").group()  # 输出：M
+result = re.match("[A-Z][a-z]*","MnnM").gruop()  # 输出：Mnn
+result = re.match("[A-Z][a-z]*","Aabcdef").group()  # 输出：Abcdef
+print(result)
+```
+
+###### 例子：变量名是否符合规则
+
+```python
+result = re.match(r"[A-Za-z_]+[A-Za-z_\d]*", input("请输入变量名："))
+re.match("[a-zA-Z_]+[\w]*",name)
+
+def main():
+    try:
+        result = re.match(r"[A-Za-z_]+[\w]*", input("请输入变量名：")).group()
+    except Exception:
+        print("变量名不符合规范")
+    else:
+        print("变量名:%s符合规范" % result)
+    finally:
+        print("欢迎下次使用！")
+```
+

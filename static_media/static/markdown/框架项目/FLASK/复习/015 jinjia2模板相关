@@ -1,0 +1,39 @@
+#### 模板渲染
+
+- django需要：request，"html.html"，字典
+- flask需要："html.html"，键值对（字典拆包就行）
+- jinjia2自动安装`from flask import render_template`
+
+```
+@app.route("/index")
+def index():
+	dict_data = {
+		"name": "slk",
+		"my_dict": {"": ""},
+		"my_list": [1, 2, 3]
+	}
+	return render_template()
+```
+
+#### xss攻击
+
+#### 过滤器
+
+#### 自定义过滤器
+
+```python
+# 过滤器本质就是一个函数，接收变量，返回处理的数据
+
+def list_step(li):
+	return li[::2]
+	
+# 注册过滤器
+app.add_template_filter(list_step, "li2")  # 第二个参数为：html中使用的名字
+
+# z注册过滤器
+---使用@app.template_filter("名字")
+
+# html
+{{ my_list | li2 }}
+```
+

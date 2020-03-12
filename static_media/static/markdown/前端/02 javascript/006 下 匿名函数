@@ -1,0 +1,29 @@
+#### 匿名函数
+
+定义的函数可以不给名称，这个叫做匿名函数，可以将匿名函数直接赋值给元素绑定的事件来完成匿名函数的调用
+
+```
+前提：这个函数只为这一个事件服务，如果其他地方也要用到同样的函数，最好不要都使用匿名函数
+```
+
+```python
+<script type="text/javascript">
+
+window.onload = function(){
+    var oBtn = document.getElementById('btn1');
+    /*
+    oBtn.onclick = myalert;
+    function myalert(){
+        alert('ok!');
+    }
+    */
+    // 直接将匿名函数赋值给绑定的事件
+
+    oBtn.onclick = function (){
+        alert('ok!');
+    }
+}
+
+</script>
+```
+

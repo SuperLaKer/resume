@@ -1,0 +1,32 @@
+```html
+    <script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.ajax({
+            url: "json.json",
+            type:"get",
+            contextType:"application/json",
+            dataType:'json',  //返回数据格式
+            /*success*/
+        })
+            /*.done(function (dat) {
+                console.log(dat);
+                alert(dat.info);
+            })*/
+                .done(function (dat) {
+                    $("#username").html(dat.name);
+                    $("#userage").html(dat.age);
+                })
+            .fail(function () {
+                alert("服务器超时");
+            })
+        });
+    </script>
+</head>
+<body>
+<h3>ajax 数据传递测试</h3>
+<p>姓名：<span id="username"></span></p>
+<p>年龄：<span id="userage"></span></p>
+</body>
+```
+

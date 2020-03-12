@@ -1,0 +1,28 @@
+#### 执行
+
+```bash
+#！/bin/bash		用`#!`:Shebang,指定了解释器
+cd ..
+ls
+# chmod +x test.sh
+
+# /bin/sh ./test.sh
+```
+
+- Shell会fork一个子进程并调用exec执行`./test.sh`这个程序
+- exec系统执行`./test.sh`程序的代码段，从它的`_start`开始执行
+- `test.sh`没有代码段和_start函数，怎么办呢？
+- exec还有另外一种机制，如果要执行的是一个文本文件，并且第一行用Shebang指定了解释器，则用解释器程序的代码段，并且从解释器的_start开始执行，而这个文本文件被当作命令行参数传给解释器
+
+#### 使用子进程的理解
+
+- `$ (cd ..;ls -l)`  # 抛出子进程执行
+- cd ..命令改变的是子Shell的PWD，而不会影响到交互式Shell
+
+- `cd ..;ls -l`  # 当前进程
+- cd ..命令是直接在交互式Shell下执行的，改变交互式Shell的PWD
+
+- `source`或者`.`命令是Shell的内建命令，这种方式也不会创建子Shell
+- `source ./test.sh`
+- `. ./test.sh`
+

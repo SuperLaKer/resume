@@ -1,0 +1,35 @@
+#### 某些术语
+
+- 父类--->基类   ||  子类 ---派生类  || 继承---派生
+
+#### 重写和super
+
+- `父类.__init__(self)`
+- `super是特殊的类super对象.方法`
+- `super().bark()`  `Dog.bark(self)`
+- `super(Dog, self).bark()`  # 省略了两个参数Dog和self，父类方法中只写参数就行，不用写self
+- 没有参数，super也不用传参
+- python3：`super().bark()`, 
+- python2：`Dog.bark(self)`， 调用父类：注意：防止递归调用，需要self
+- `Animal().__init__()不要self` 对象调用方法
+
+#### 类变量最好使用类名，不要使用对象
+
+```python
+class Animal():  # 地球上物生物
+	age = "几亿年"  # 不可变类型
+    age = ["几亿年"]  # 可变类型
+	
+people = Animal()
+print(people.age)  # 几亿年
+people.age[0] = "15岁"
+people.age =["15岁"]
+
+people.age = "15岁"  # 无法修改父类
+print(people.age)  # 15岁，永远调不到类属性，相当于动态增加了一个属性
+del people.age  # 删除动态属性
+
+```
+
+
+

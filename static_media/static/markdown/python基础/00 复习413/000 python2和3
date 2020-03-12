@@ -1,0 +1,6 @@
+- `cmp("1", "2")` python3使用比较运算符比较字符串
+- `super().brak()`
+- `Dog.brak(self)`  # `self必传`
+
+- python3
+  - 字符串  在内存中是用unicode储存的

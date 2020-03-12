@@ -1,0 +1,60 @@
+#### 变量
+
+- 变量类型：数字和非数字
+  - `int float bool complex `   
+- python2中整数：long   int
+- 数字类型  变量直接 计算
+
+#### 可变类型和不可变类型
+
+- 不可变：tuple，bool， int， str， 可哈希类型
+- 可变：list，dict，set
+- 集合本身是可变类型，但里面的元素是不可变的
+
+### 标示符
+
+- 标示符就是：定义的变量名 、函数名
+- 标示符：字母、数字下划线，数字不能开头
+- 严格区分大小写
+- 不能和关键字重名
+- 单词之间使用 _
+- 小驼峰  大驼峰
+
+#### 关键字
+
+- python 定义好的标示符
+- del(变量)  # 从内存中删除变量（对象）
+- `['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']`
+
+#### input
+
+```
+num = input("请输入：")
+print(num)
+```
+
+#### 格式化输出
+
+```
+%s	# 输出字符串
+%d	# 有符号的十进制数据， %06d,显示6位整数
+%f	# 浮点数，%.2f, 表示只显示小数点后两位
+%%	# 输出 %
+```
+
+#### print结尾输出
+
+- `print()默认会增加换行`
+- `print("*", end="")`
+- `end=""`：向控制太输出内容后，紧接着输出  引号  中的内容 不换行，后面执行的函数也是同一行输出
+- 单纯的换行：`print("")`
+
+#### 转义字符
+
+- `\t`  制表符，输出的时候 垂直方向 保持对其
+- `\n`  换行
+- `\\`  输出 \
+- `\'`  输出  单引号  '
+- `\"`  输出 双引号  "
+- `\r`  回车
+

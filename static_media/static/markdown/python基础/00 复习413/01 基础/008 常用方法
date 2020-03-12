@@ -1,0 +1,74 @@
+#### 判断字符串仅仅包括数字
+
+```python
+isdecimal()  # 数字 + 全角数字  《常用》
+isdigit()  # 数字 + 全角数字 + unicode  \u00b2
+isnumeric()  # 数字 + 全角数字 + 中文大写数字
+```
+
+#### 查找替换
+
+```python
+startswith()  # "hello world".startswith("he")
+endswith()
+str.find("")  # 不存在返回  -1
+str.index("")  # 异常
+replace(old, new)  # 返回新的字符串，原有的字符串不会修改
+```
+
+#### 文本对其
+
+- 左对齐，右对齐 或 居中（just  调整）
+
+```python
+list1 = ["静夜思"， "窗前明月光", "疑是地上霜", "举头望明月", "低头思故乡"]
+
+    for i in list1:
+        print("%s" % i.center(10, " "))
+    for i in list1:
+        print("%s" % i.ljust(10, " "))
+    for i in list1:
+        print("%s" % i.rjust(10, " "))
+```
+
+#### 去除空白字符
+
+```python
+l/r/strip()  # 去除字符串左/右/两边的字符串
+
+list1 = ["静夜思\t"， "\r\n窗前明月光", "疑是地上霜", "举头望明月", "低头思故乡"]
+for i in list1:
+	print("%s" % i.strip().center(10, " "))
+```
+
+#### 字符串拆分和连接
+
+```
+string.split(str="", num)  # 在str处 将字符串拆分为list, str 默认包含 \r\t\n  空格 等
+string.join()
+```
+
+## 切片（slice）
+
+```
+string[开始索引：结束索引：步长]  # [) 左闭右开  randomint(1, 10) 包含1和10
+string[-1:-5]
+string[5:]  #  从5切到末尾
+```
+
+## 公共方法 见 009
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

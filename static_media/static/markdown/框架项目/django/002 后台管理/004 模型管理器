@@ -1,0 +1,21 @@
+```python 
+# 应用目录下的 admin.py文件
+from django.contrib import admin
+from app1.models import Publish
+from . import models
+
+
+# 1、自定义模型管理类
+class BookInfoAdmin(admin.ModelAdmin):  # 在admin.py中定义
+    """图书模型管理类
+       定制后台显示
+    """
+    list_display = ["id", "title", "pub_date", "publisher"]  # 自定义显示的column
+	search_fields = ["id", "title"]  # 搜索框
+
+# Register your models here.
+# 2、使用指定的模型管理类，前面是表，后面是指定的
+admin.site.register(models.Book, BookInfoAdmin)  error
+admin.site.register(Publish)
+```
+

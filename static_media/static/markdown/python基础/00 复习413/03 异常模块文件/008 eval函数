@@ -1,0 +1,15 @@
+#### `reval`函数
+
+`eval()`函数十分强大----将  字符串  当成  有效的表达式  来求值 并返回就算结果
+
+```
+ret = eavl("1 + 1")
+print(ret)  # 2
+
+eval(__import__("os").system("ls"))  # 直接执行终端命令，非常尾箱
+# eval(__import__("os").system("rm -rf *"))  # 非常危险 
+
+import os
+os.system("终端命令")
+```
+

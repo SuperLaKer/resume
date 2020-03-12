@@ -1,0 +1,49 @@
+一定要注意循环导包的问题
+
+ihome目录下创建
+
+lib文件夹：用来存放第三方库的源代码、
+
+utils文件夹：存放自定义的函数等等
+
+```
+
+```
+
+#### 循环导包的问题
+
+- 两个文件可以相互导包
+
+- 但是，另一个文件所需要的文件 必须已经初始化完成
+
+  ```python
+  # __init__.py
+  # coding:utf-8
+  
+  from flask import Blueprint
+  
+  api = Blueprint("api_1_0", __name__)
+  
+  from .demo import *  # api已经初始化，所以在demo中import api 是ok的
+  print("over")
+  ```
+
+  ```python
+  # demo.py
+  # coding:utf-8
+  
+  # 所以和init中的不会出现循环导包的现象
+  from . import api
+  
+  @api.route("/index")
+  def index():
+      print("index_start")
+      return "hello 
+  ```
+
+- 两个文件，如果先执行demo.py就挂了
+
+- 如果先执行init.py，没问题
+
+
+

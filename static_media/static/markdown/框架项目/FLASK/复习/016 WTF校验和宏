@@ -1,0 +1,104 @@
+#### web表单
+
+web表单是web应用程序的基本功能，负责HTML页面数据采集，将用户输入的数据提交给服务器
+
+在Flask中使用Flask-WTF处理web表单，它封装了WTForms，并且它有验证表单数据的功能
+
+- 使用Flask-WTF需要配置参数SECRET_KEY
+
+#### 搜索WTForms支持字段
+
+#### WTForms常用验证函数
+
+#### 在HTML页面中直接写form表单：
+
+```html
+#模板文件
+<form method='post'>
+    <input type="text" name="username" placeholder='Username'>
+    <input type="password" name="password" placeholder='password'>
+    <input type="submit">
+</form>
+```
+
+#### 视图函数中获取表单数据：
+
+```python
+from flask import Flask,render_template,request
+
+@app.route('/login',methods=['GET','POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        print username,password
+    return render_template('login.html',method=request.method)
+```
+
+#### flask-wrf实现表单
+
+```python
+app.config['SECRET_KEY'] = 'silents is gold'  # 可以使用类配置
+```
+
+```python
+#coding=utf-8
+from flask import Flask,render_template, redirect,url_for,session,request,flash
+
+#导入wtf扩展的表单类
+from flask_wtf import FlaskForm
+#导入自定义表单需要的字段
+from wtforms import SubmitField,StringField,PasswordField
+#导入wtf扩展提供的表单验证器
+from wtforms.validators import DataRequired,EqualTo
+app = Flask(__name__)
+app.config['SECRET_KEY']='1'
+
+#自定义表单类，文本字段、密码字段、提交按钮
+class Login(Form):
+    us = StringField(label=u'用户：',validators=[DataRequired()])
+    ps = PasswordField(label=u'密码',validators=[DataRequired(),EqualTo('ps2','err')])
+    ps2 = PasswordField(label=u'确认密码',validators=[DataRequired()])
+    submit = SubmitField(u'提交')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+#定义根路由视图函数，生成表单对象，获取表单数据，进行表单数据验证
+@app.route('/',methods=['GET','POST'])
+def index():
+    form = Login()
+    if form.validate_on_submit():
+        name = form.us.data
+        pswd = form.ps.data
+        pswd2 = form.ps2.data
+        print name,pswd,pswd2
+        return redirect(url_for('login'))
+    else:
+        if request.method=='POST':
+            flash(u'信息有误，请重新输入！')
+        print form.validate_on_submit()
+
+    return render_template('index.html',form=form)
+if __name__ == '__main__':
+    app.run(debug=True
+```
+
+```html
+<form method="post">
+        #设置csrf_token
+        {{ form.csrf_token() }}
+        {{ form.us.label }}
+        <p>{{ form.us }}</p>
+        {{ form.ps.label }}
+        <p>{{ form.ps }}</p>
+        {{ form.ps2.label }}
+        <p>{{ form.ps2 }}</p>
+        <p>{{ form.submit() }}</p>
+        {% for x in get_flashed_messages() %}
+            {{ x }}
+        {% endfor %}
+ </form>
+```
+

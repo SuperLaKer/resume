@@ -1,0 +1,22 @@
+#### 方法
+
+- start()	
+- join()	感知子进程的结束
+- terminate()	结束子进程
+- p.is_alive()	查看某个子进程是否还在运行
+
+#### 属性
+
+- p.daemon = true  守护进程，start之前
+- p.name  进程名
+- p.pid  进程号
+
+#### 锁
+
+```
+from multiprocessing import Process, Lock
+my_lock = Lock()
+my_lock.acquire()
+my_lock.release()
+```
+

@@ -1,0 +1,52 @@
+```python
+# 浏览器访问的url
+127.0.0.1:5000/static/html/index.html  # 这样很不方便
+    
+# 理想url访问方式
+127.0.0.1:5000/
+127.0.0.1:5000/index
+
+# 实现方式：使用转换器对url进行解析
+# 捕获url参数（flask万能转换器）
+
+```
+
+```python
+# web_html.py
+# 用于提供静态文件
+# coding:utf-8
+
+from flask import Blueprint, current_app
+
+web_html = Blueprint("web_html", __name__)
+
+# 解析：127.0.0.1:5000/static/html/index.html
+# 实际输入：127.0.0.1:5000/index.html
+# 127.0.0.1:5000/favicon.ico
+
+@web_html.route("/<re(r'.*'):html_file_name>")
+def get_html(html_file_name):
+    """提供html文件"""
+    # 如果访问的url为/ (html_file_name is None)
+
+    if not html_file_name:
+        html_file_name = "index.html"
+
+    # 如果资源名字不是favicon.ico
+    if html_file_name != "favicon.ico":
+        html_file_name = "html/" + html_file_name
+    # flask提供的返回静态文件的方法
+    return current_app.send_static_file(html_file_name)
+```
+
+```python
+    # 主包__init__.py
+    # 为flask添加自定的转换器
+    app.url_map.converters["re"] = RegexConverter
+
+
+    # 注册提供静态文件的蓝图
+    from ihome import web_html
+    app.register_blueprint(web_html.web_html)
+```
+

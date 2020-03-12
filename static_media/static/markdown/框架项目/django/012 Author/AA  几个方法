@@ -1,0 +1,79 @@
+## Django自带的用户认证
+
+- 实现包括用户注册、用户登录、用户认证、注销、修改密码等功能
+- request.user
+
+Django默认使用 auth_user 表来存储用户数据
+
+```python
+from django.contrib import auth
+
+# 方法
+authenticate()  
+login(request, user)
+login_requierd()
+logout(request)  # request.user.is_authenticated():
+is_authenticated()
+create_user()
+create_superuser()
+check_password(raw_password)
+set_password(raw_password)
+
+
+
+# 用户认证模块，传进去password和name,返回User对象
+user = authenticate(username='theuser',password='thepassword')
+from django.contrib.auth import authenticate, login
+   
+def my_view(request):
+  username = request.POST['username']
+  password = request.POST['password']
+  user_obj = authenticate(username=username, password=password)
+  if user_obj:
+    login(request, user_obj)
+# login()
+该函数实现一个用户登录的功能。它本质上会在后端为该用户生成相关session数据
+# logout()
+def logout_view(request):
+  logout(request)
+前请求的session信息会全部清除
+# login_required()
+LOGIN_URL = '/login/'  # 这里配置成你项目登录页面的路由  login_requierd()
+# 创建用户
+from django.contrib.auth.models import User
+user = User.objects.create_user（username='用户名',password='密码',email='邮箱',...）
+# 检查用户密码
+ok = request.user.check_password(raw_password='原密码')
+# 设置新密码
+user_obj.set_password('新密码')
+user_obj.save()
+
+```
+
+```python
+@login_required
+def set_password(request):
+    user = request.user
+    err_msg = ''
+    if request.method == 'POST':
+        old_password = request.POST.get('old_password', '')
+        new_password = request.POST.get('new_password', '')
+        repeat_password = request.POST.get('repeat_password', '')
+        # 检查旧密码是否正确
+        if user.check_password(old_password):
+            if not new_password:
+                err_msg = '新密码不能为空'
+            elif new_password != repeat_password:
+                err_msg = '两次密码不一致'
+            else:
+                user.set_password(new_password)
+                user.save()
+                return redirect("/login/")
+        else:
+            err_msg = '原密码输入错误'
+    content = {
+        'err_msg': err_msg,
+    }
+    return render(request, 'set_password.html', content)
+```
+

@@ -1,0 +1,33 @@
+## URI类似的配置
+
+```python
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+
+class Config(object):
+	"""配置参数"""
+	# sqlalchemy的参数配置
+	SQLALCHEMY_DATABASE_URI = "mysql://root:password@127.0.0.1:3306/database_name"
+	# 设置sqlalchemy自动跟踪数据库，字段改了，模型类也会改变
+	SQLALCHEMY_TRACK_MODIFICATIONS = True
+	# 显示sql语句
+	SQLALCHEMY_ECHO = True
+	# 自动提交不用了，commit_on_teardown
+	
+app.config.from_object(Config)  # 导入配置
+
+db = SQLAlchemy(app)  # 创建数据库sqlalchemy对象
+
+class User():
+    name
+
+class Role():
+    pass
+
+@app.route("/")
+def index():
+	return "index page"
+```
+

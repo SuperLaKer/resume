@@ -1,0 +1,22 @@
+```
+.box>div{$}*9
+```
+
+```
+template.js
+
+data = {  }
+$("#from_house_info").serializeArray().map(function(){ data[x.name]=x.value })
+
+$(":checkbox")  //选中所有checkbox
+$("checked")  //勾选了的
+
+$(":checked[name=facility]")  //input框
+var facility = [];
+$(":checked[name=facility]").each(function(index, x){ facility[index] = $(x).val() })
+```
+
+```
+document.location.seach,获取前端url信息
+```
+

@@ -1,0 +1,24 @@
+#### 连接到远程分支：
+
+```
+git checkout -b dev
+
+git branch dev
+git checkout dev 
+
+add -A
+commit -a -m "info_about_code"
+git push origin dev
+
+git branch --set-upstream-to=origin/dev dev  # 同步
+git push  # ok, instand of git push origin dev
+```
+
+#### 拉取远端代码
+
+```
+git pull origin dev_front-end  # 拉取前端开发者代码
+```
+
+
+

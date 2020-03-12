@@ -1,0 +1,27 @@
+```python
+(r"/", index.IndexHandler),
+(r"/parameter", index.ParameterHandler, {"kw1": "key_word1", "kw2": "key_word2"})
+tornado.web.url(r"/user", index.UserHandler, name="index_user_handler"),
+
+```
+
+### 捕获参数
+
+#### url中写死的参数
+
+```
+(r"/parameter", index.ParameterHandler, {"kw1": "key_word1", "kw2": "key_word2"}),
+
+
+class ParameterHandler(RequestHandler):
+
+    def initialize(self, kw1, kw2):
+        self.word3 = kw1
+        self.word4 = kw2
+
+    def get(self, *args, **kwargs):
+        print("*"*50)
+        print(self.word3, self.word4)
+        self.write("hello home")
+```
+

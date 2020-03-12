@@ -1,0 +1,52 @@
+#### 进程复制server_socket,主进程需要关闭server_socket
+
+- 数据缓存区，recv
+
+```python
+import socket
+import threading
+
+def worker(server_socket):
+    while True:
+        # 收数据（服务器，先收数据，请求报文）
+        recv_data = server_socket.recv(1024)
+
+        if len(recv_data) == 0:
+            print("break")
+            break
+        elif recv_data.decode("ascii") == "exit":
+            print("break")
+            break
+
+        print(recv_data.decode("ascii"))
+
+        # 发送数据
+        server_socket.send("lalal".encode("utf-8"))  # 指定编码，系统转换为网络bytes
+
+    # 关闭server_socket
+    print("进程关闭socket")
+    server_socket.close()
+
+def main():
+    # 创建套接字
+    tcp_server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    # 绑定（服务器固定端口和ip）
+    tcp_server_socket.bind(("", 80))
+
+    # 监听，三次握手，四次挥手，在这里完成
+    tcp_server_socket.listen(128)
+
+    while True:
+        # 等待新客户端连接, (client_addr:元组)
+        print("等待新客户端到来！")
+        server_socket, client_addr = tcp_server_socket.accept()
+        print("欢迎：", client_addr[0])
+        p1 = threading.Thread(target=worker, args=(server_socket,))
+        p1.start()
+        # server_socket.close()
+
+if __name__ == '__main__':
+    main()
+```
+

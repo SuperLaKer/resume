@@ -1,0 +1,8 @@
+- manag.py仅保留app.run，其他的全部分离出去
+
+  ```
+  # manage.py
+  ```
+
+  
+

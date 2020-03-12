@@ -1,0 +1,77 @@
+import logging
+import time
+import os
+from django.shortcuts import render
+from django.views.generic import View
+from django.conf import settings
+from django.core.mail import send_mail
+from multiprocessing import Process
+from app1.models import Message, LoginUser
+
+timer = str(time.time())[-5:]
+
+
+def send_message(message):
+    subject = "招聘信息"
+    message = message
+    sender = settings.EMAIL_FROM
+    receiver = ["The163addr@163.com", "944162982@qq.com", "2719881771@qq.com"]
+
+    Process(target=send_mail, args=(subject, message, sender, receiver)).start()
+    return
+
+
+def writefile(file):
+    global timer
+    filepath = os.path.join(settings.MEDIA_ROOT, timer + file.name)
+    f = open(filepath, "wb")
+    print(filepath)
+    for line in file.chunks():
+        f.write(line)
+    f.close()
+
+
+# Create your views here.
+class ResumeView(View):
+    """注册类视图"""
+
+    def get(self, request):
+        ip = request.META.get("REMOTE_ADDR")
+
+        try:
+            LoginUser.objects.create(address=ip)
+        except Exception as e:
+            logging.error("*****登陆数据记录*******")
+            logging.error(e)
+
+        return render(request, "index.html")
+
+    def post(self, request):  # 和用户注册逻辑相同
+        """进行注册逻辑"""
+        ip = request.META.get('REMOTE_ADDR')
+        message = str(request.POST.get("message"))
+        file = request.FILES.get('file')
+
+        if file is not None:  # 文件不为空，信息也不为空
+            new_message = message + "*" * 5 + timer + str(file.name)
+
+            send_message(new_message)
+            writefile(file)
+
+            try:
+                Message.objects.create(address=ip, message=new_message)
+            except Exception as e:
+                logging.error("******数据库写入*******")
+                logging.error(e)
+
+            return render(request, 'index.html')
+
+        else:
+            send_message(message)
+            try:
+                Message.objects.create(address=ip, message=message)
+            except Exception as e:
+                logging.error("******数据库写入*******")
+                logging.error(e)
+
+            return render(request, 'index.html')

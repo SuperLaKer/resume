@@ -1,0 +1,24 @@
+```
+func (c *TestModelController)Get(){
+	user := models.UserInfo{Username:"wangwu",Password:"196451"}
+	models.AddUser(&user)
+
+	//c.Ctx.WriteString("call model success!")
+	c.Data["tittle"] = "我是tittle"
+	c.Data["Istrue"] = true
+	c.Data["true1"] = "true执行我"
+	c.Data["false1"] = "false执行我"
+	c.TplName = "if.html"
+}
+```
+
+```
+<body>
+    {{if .Istrue}}
+        <em>{{.true1}}</em>
+    {{else}}
+        <em>{{.false1}}</em>
+    {{end}}
+</body>
+```
+

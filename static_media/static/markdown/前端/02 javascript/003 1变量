@@ -1,0 +1,61 @@
+#### 变量
+
+javascript是一种弱类型语言，其变量类型由它的值来决定。定义变量需要使用关键字var
+
+```javascript
+var iNum = 123;
+var sTr = 'asd'
+
+//同时定义多个变量
+var iNm = 1,sTr = 'qwe',sCount = '12';
+```
+
+#### 变量类型
+
+```javascript
+//5种基本数据类型
+number 
+string
+boolean
+undefined  //undefined类型：变量声明未初始化，它的值就是undefined
+null  //null类型，如果定义的变量将来准备保存对象，可以将变量初始化为null，在页面上获取不到对象，返回值就是null
+
+//复合类型
+object
+```
+
+#### 规则与注释
+
+```
+每行代码结尾必须有；
+区分大小写
+第一个字符必须是：字母、_、$（字母、下划线、美元符号）
+其它字符可以是字母、数字、下划线、美元符号
+```
+
+#### 匈牙利命名规范
+
+```
+对象o Object 比如：oDiv
+数组a Array 比如：aItems
+字符串s String 比如：sUserName
+整数i Integer 比如：iItemCount
+布尔值b Boolean 比如：bIsComplete
+浮点数f Float 比如：fPrice
+函数fn Function 比如：fnHandler
+正则表达式re RegExp 比如：reEmailCheck
+```
+
+
+
+```javascript
+<script type="text/javascript">    
+var iNum = 123;
+var sTr = 'abc123';
+function fnAlert(){
+    alert(sTr);
+};
+fnAlert();
+</script>
+```
+

@@ -1,0 +1,28 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="template.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var areas = [1, 2, 3, 4, 5, 6, 7];
+            //使用js模板
+            var html = template("try", {"areas": areas});
+            $("#box").html(html);
+        })
+    </script>
+</head>
+<body>
+<div id="box"></div>
+<script type="text/html" id="try">
+    {{ each areas as area }}
+    {{ area }}
+    {{ /each }}
+</script>
+</body>
+</html>
+```
+

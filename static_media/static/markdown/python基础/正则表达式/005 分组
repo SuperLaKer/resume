@@ -1,0 +1,27 @@
+#### 匹配分组
+
+- `|`：匹配左右任意一个表达式  或  `(163|QQ|qq)`
+- `(.*)`：将括号中的字符作为一个分组,几个括号几个分组，从1开始
+- `\num`：`\1`：使用分组`1`匹配到的内容
+- `(?p<ame>\w*)`： `(?P<email>163|QQ|qq)`，给分组起个名字，不再使用`\分组id了`
+- `(?P=name)`：
+
+##### 括号分组 和 或
+
+```python
+re.match(r"[a-zA-Z0-9_]@163\.com$", "slk944@163.com").group()  # 取出：`slk944@163.com`
+re.match(r"([a-zA-Z0-9_])@(163|qq)\.com$", "slk944@163.com").group(1)  # 取出`slk944`
+re.match(r"([a-zA-Z0-9_])@(163|qq)\.com$", "slk944@163.com").group(2)  # 取出`163`
+```
+
+```python
+# <h1>hahaha</h1>
+
+re.match(r"</w*>.*<\w*>")  # <h1>hahaha<\h2>
+re.match(r"<(\w*)>.*</\1>")  # 匹配分组1相同的内容
+
+# <body><h1>hahaha</h1></body>
+re.match(r"<(?P<name1>\w*)><(?P<name2>\w*)>.*<(?P=name2)></(?P=name1)>")
+
+```
+

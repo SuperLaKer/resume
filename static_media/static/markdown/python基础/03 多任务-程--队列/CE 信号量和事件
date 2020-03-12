@@ -1,0 +1,85 @@
+#### 信号量
+
+- `from multiprocessing import Semaphore`
+- 用锁的原理，内置了一个计数器
+- 在同一时间 只能有指定数量的继承执行某一段被控制的代码
+
+#### 事件
+
+- `from multiprocessing import Event`
+- 一个事件可以使所有进程都进入阻塞状态
+- 也可以控制所有的进程解除阻塞
+- 事件被创建之后，默认是阻塞状态
+
+```
+# 信号量：对代码加锁，某一时间只能有几个线程可以使用
+# 互斥锁：threading.Lock()
+# 递归锁：threading.RLock()
+```
+
+```
+def main(sem, a, b):
+    sem.acquire()
+    time.sleep(1)
+    print("{}+{}".format(a, b))
+    print("")
+    sem.release()
+
+
+if __name__ == "__main__":
+    sem = Semaphore(2)  # 同时允许两个线程执行某些代码
+    for i in range(10):
+        Thread(target=main, args=(sem, i, i * 11)).start()
+        # 主线程等待子线程执行结束
+```
+
+#### 事件
+
+```
+# 事件的几个方法
+e = Event()
+
+print(e.is_set())  # False
+e.set()  # 设置为True
+print(e.is_set())  # True
+e.clear()  # 设置为False
+e.wait()  # 如果e.is_set() is False，则阻塞
+
+```
+
+```python
+import time
+import random
+import threading
+
+class Test(object):
+    COUNT = 3
+
+    def __init__(self):
+        self.e = threading.Event()
+
+    def check_web(self):
+        time.sleep(random.random())
+        self.e.set()
+
+    def connect_db(self):
+        while Test.COUNT > 0:
+            self.e.wait(0.2)  # 超时为0.8秒，然后往下执行,极少连接失败
+            if self.e.is_set():
+                print("成功连接")  # 成功连接后return
+                return
+            else:
+                print("超时")
+            Test.COUNT -= 1
+        print("数据库连接异常")
+
+    def run(self):
+        threading.Thread(target=self.check_web).start()
+        threading.Thread(target=self.connect_db).start()
+
+if __name__ == "__main__":
+    Test().run()
+    print("")
+    print("当前线程数", threading.active_count())
+```
+

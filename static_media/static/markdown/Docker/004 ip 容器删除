@@ -1,0 +1,25 @@
+查看容器IP
+
+```
+docker inspect can_name
+
+docker inspect --format='{{.NetworkSettings.IPAddress}}' can_name  
+
+mysql -u root -p
+
+mysql: 172.17.0.3:33306
+```
+
+#### 删除容器
+
+```
+# 不能删除正在运行的容器
+docker rm $can_id/can_name
+
+# 删除镜像，如果镜像有相关的容器则不能删除
+docker rmi image_id
+
+# 删除所有
+docker rm `docker ps -a -q`
+```
+

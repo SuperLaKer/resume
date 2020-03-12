@@ -1,0 +1,22 @@
+## LXML库
+
+#### 使用入门
+
+- 导入`lxml`的`etree库`
+  - `from lxml import etree`
+- 利用etree.HTML，将字符串转化为Element对象
+  - `html = etree.HTML(text)`  #` text` 为`str`类型或`bytes`类型，报错换另一种数据类型
+- Element对象具有xpath的方法
+  - `html.xpath("语法")`
+
+- `lxml`可以自动修正`html`代码，删除多余的标签，添加缺少的标签
+
+#### 修改后的html
+
+- lxml能够修正HTML代码，打死可能会改错
+- 使用etree.tostring观察修改后的HTML代码的内容，格局修改后的html字符串写xpath
+
+#### 提取页面数据，先分组
+
+- 取到一个包含一个分组标签的列表  标签
+- 遍历，取其中每一组进行数据的提取，不会造成数据的对应错乱

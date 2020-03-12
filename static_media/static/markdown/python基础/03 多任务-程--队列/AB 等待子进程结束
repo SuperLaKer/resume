@@ -1,0 +1,22 @@
+#### join()方法
+
+- 如果有多个进程，p.start(),把p放到list中，主进程结束前循环遍历p，在p.join()等待所有子进程结束
+- 循环会卡在p.join()处
+
+```
+import time
+from multiprocessing import Process
+
+def f(name):
+    print('hello', name)
+    time.sleep(1)
+    print('我是子进程')
+
+
+if __name__ == '__main__':
+    p = Process(target=f, args=('bob',))
+    p.start()
+    p.join()  # 等待子进程结束主线程在结束
+    print('我是父进程')
+```
+

@@ -1,0 +1,47 @@
+#### match
+
+```
+re.match(r"")  # 子匹配开头
+```
+
+#### search
+
+```
+import re
+
+result = re.search(r"\d+", "阅读次数 999").group()
+$ 999
+```
+
+#### sub()
+
+```
+    ret = re.search(r"l", "hello world").group()
+    ret1 = re.findall(r"l", "hello world")  # 返回list
+    ret2 = re.sub(r" ", "", "hello world")
+    print(ret2)  # "helloworld"
+```
+
+#### findall()
+
+```
+# findall()的用法
+def main():
+    result = re.findall("a.b", "acbadb")
+    result0 = re.findall("a(.)b", "acbadb")
+    print(result)
+    print(result0)
+    # ['acb', 'adb']
+    # ['c', 'd']
+```
+
+#### re.compile()
+
+```
+# re.compile()
+def main():
+    p = re.compile("a.b", re.DOTALL)  # re.S
+    result = p.match("a\nb").group()
+    print(result)
+```
+

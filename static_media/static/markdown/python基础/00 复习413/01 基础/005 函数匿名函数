@@ -1,0 +1,43 @@
+- 基本文件中有
+- 形参和实参
+- return 元组
+- `results = function()，多返回值函数` 
+- `type(results)`
+- 接收多个参数，返回多个数据
+
+```python
+def main(*args, **kwargs):
+    # print(type(args))  # tuple
+    # print(type(kwargs))  # dict
+    print("args:", args)
+    print("kwargs:", kwargs)
+    ret = args[0] + args[1], args[0] * args[1]
+    print(type(ret), ret)
+    return ret
+
+
+if __name__ == '__main__':
+    main(1, 2, a=3, b=5)  # 元组，字典
+    print("*"*30)
+    main(5, 6, {"a": 3, "b": 4})  # 全部元组
+    print("*"*30)
+    main(5, 6, **{"a": 3, "b": 4})  # 拆包为键值对
+```
+
+```python
+def main(args):
+	pass
+	
+main(1, 2, 3)  # error
+main((1, 2, 3))
+```
+
+#### 匿名函数
+
+```
+lambda 参数：表达式兼返回值
+
+add = lambda m,n:m+n  # 匿名函数赋值给变量，变量为函数名
+调用：print(add(m,n))
+```
+

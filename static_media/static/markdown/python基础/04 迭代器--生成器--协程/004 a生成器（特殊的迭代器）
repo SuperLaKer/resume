@@ -1,0 +1,38 @@
+## 生成器generator,特殊的迭代器
+
+- 如果函数中有yield，就变成了生成器。类比于类
+- 在调用的时候，就是创建生成器对象。
+- `obj = gen_func(value)`
+- `for num in obj:`
+- `print(num)`
+
+```python
+def create_num(all_num):
+    a, b = 0, 1
+    current_num = 0
+    while current_num < all_num:
+        print(a)
+        yield a  # 暂时退出循环，把a传递给遍历对象，然后继续循环
+        a, b = b, a + b
+        current_num += 1
+
+
+ojb = create_num(10)  # 特殊迭代器对象
+# 使用for取值
+for num in obj:
+    print(num)
+
+# 使用next()取值
+while True:
+    try:
+        result = next(obj)
+        print(result)
+    except Exception as e:
+        print(e.value)
+        break
+```
+
+#### yield（生产、屈服、投降的意思）生成器
+
+#### 函数中有yield，使函数执行一部分代码，暂停，之后恢复为原来的状态继续执行
+

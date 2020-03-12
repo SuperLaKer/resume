@@ -1,0 +1,20 @@
+```
+git add code.txt  # 提交到暂存区，为形成版本
+git commit code.txt  # 形成版本，保存在master基础之上
+```
+
+#### 前工作树的状态
+
+```
+git status
+已经master的文件--->被修改
+新建的内容--->未跟踪
+```
+
+#### 整体执行
+
+```
+git add  # 所有被更改的文件，一块儿提交到 stage  暂存区
+git commit  # 一起提交到master,形成指针
+```
+

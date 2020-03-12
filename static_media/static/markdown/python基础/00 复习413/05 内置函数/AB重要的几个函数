@@ -1,0 +1,35 @@
+```python
+zip()  # 拉链方法
+
+# 相当于
+[i for i in [1, 2, 3, 4]if i ...]
+filter()
+def is_double(x):
+	return x%2 == 0  # 返回True或False
+	
+ret = filter(is_double, [1, 2, 3])  # 把可迭代元素传给函数，True返回一个新列
+def func(num):  # 开根号为整数
+	res = math.sqrt(num)
+	return res % 1 == 0
+filter(func, range(1, 101))
+
+# 相当于
+[i for i in [1, 2, 3, 4]]
+result = map(abs, [1, 2, -3, 4])  # 函数作用求绝对值
+result == [1, 2, 3, 4]
+filter之后的元素个数小于等于原来的
+map元素个数不变，但是值可能发送改变
+
+# sort,在原来的基础上排序
+list1 = [-2, 3, 5, -1]
+list1.sort()
+print(list1)
+
+list1.sort(key=abs)  # 按绝对值排序
+# sorted  生成新的list，占内存
+sort(key=, reverse=)
+```
+
+#### 题
+
+- 列表按照每一个值得`len`排序

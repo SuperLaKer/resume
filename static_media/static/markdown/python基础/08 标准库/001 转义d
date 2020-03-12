@@ -1,0 +1,21 @@
+```
+#1.非转义输出
+>>> print 'c:\name.txt'
+c:
+ame.txt
+>>> print 'c:\test.txt'
+c:    est.txt
+
+#2.反斜杠(\)转义输出
+>>> print 'c:\\name.txt'
+c:\name.txt
+>>> print 'c:\\test.txt'
+c:\test.txt
+
+#3.使用原始字符串输出
+>>> print r'c:\name.txt'
+c:\name.txt
+>>> print r'c:\test.txt'
+c:\test.txt
+```
+

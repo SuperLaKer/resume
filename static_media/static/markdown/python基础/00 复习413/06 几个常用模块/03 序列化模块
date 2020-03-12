@@ -1,0 +1,31 @@
+## 序列化模块
+
+将原本的字典、列表等内容转换成一个字符串的过程就叫做**序列化**
+
+```
+数据结构----序列化---->字符串
+字符串----反序列化---->数据结构
+```
+
+## json
+
+Json模块提供了四个功能：dumps、dump、loads、load
+
+- `json.dump(dic,f)  #dump方法接收一个文件句柄，直接将字典转换成json字符串写入文件`
+- `dic2 = json.load(f)  #load方法接收一个文件句柄，直接将文件中的json字符串转换成数据结构`
+
+#### ensure_ascii
+
+```
+>>> import json
+>>> print json.dumps('中国')
+"\u4e2d\u56fd"
+>>> print json.dumps('中国',ensure_ascii=False)
+"中国"
+>>> 
+```
+
+jsonp跨域请求
+
+
+

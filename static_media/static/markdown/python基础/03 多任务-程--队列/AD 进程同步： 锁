@@ -1,0 +1,27 @@
+### 锁 —— multiprocess.Lock
+
+​		并发编程让我们能更加充分的利用IO资源，但是也给我们带来了新的问题，当多个进程使用同一份数据资源的时候，就会引发数据安全或顺序混乱问题。
+
+- 不加锁，混乱
+- 加锁，变成了串行
+
+```python
+import os
+import time
+import random
+from multiprocessing import Process, Lock
+
+def work(lock, n):
+    # lock.acquire()
+    print('%s: %s is running' % (n, os.getpid()))
+    time.sleep(random.random())
+    print('%s:%s is done' % (n, os.getpid()))
+    # lock.release()
+
+if __name__ == '__main__':
+    lock = Lock()
+    for i in range(3):
+        p = Process(target=work, args=(lock, i))
+        p.start()
+```
+

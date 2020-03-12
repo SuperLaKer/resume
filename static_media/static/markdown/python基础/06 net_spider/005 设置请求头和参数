@@ -1,0 +1,57 @@
+#### 发送带header的请求
+
+- 为什么请求需要带上header？
+
+  - 模拟浏览器，获取和浏览器一致的内容
+
+- header的形式：字典
+
+- 设置请求头：`requests.get(url, headers=字典)`
+
+- 请求头
+
+  ```
+  GET / HTTP/1.1
+  Host: www.baidu.com
+  Connection: keep-alive
+  Cache-Control: max-age=0
+  Upgrade-Insecure-Requests: 1
+  
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+  Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+  Referer: https://www.baidu.com/s?ie=utf-………………
+  Accept-Encoding: gzip, deflate, br
+  Accept-Language: zh-CN,zh;q=0.9
+  Cookie: BAIDUID=AA980E65:FG=1; PSTM=1556335666; …………
+  ```
+
+  ```
+  def main():
+      header_dict = {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 "
+                        "(KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"}
+  
+      response = requests.get("https://www.baidu.com", headers=header_dict)  # 设置请求头
+  
+      # 设置了请求头，相应的body内容和浏览器一样
+      print(response.content.decode())
+  
+      print(response.request.headers)
+  ```
+
+设置参数
+
+- 请求规则
+
+  - `https://www.baidu.com/s?wd=python`
+
+- 字典 = {'wd': 'python'}  # 多个参数拆包
+
+- 设置参数：`requests.get(url + "s?", headers=headers, params=字典)`
+
+  ```
+  request_params = {'kw': 'python', 'kw': 'go'}
+  respose = requests.get(url + "s?", headers=header, params=request_params)
+```
+  
+  

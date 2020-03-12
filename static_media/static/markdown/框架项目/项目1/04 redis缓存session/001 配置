@@ -1,0 +1,35 @@
+- 存放session数据
+- 存放静态化页面（首页）
+
+##  配置
+
+- ` pip install django-redis`  
+
+```python
+# Django的缓存配置 settings.py
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",  # 默认
+        "LOCATION": "redis://172.16.179.142:6379/9",
+        "OPTIONS": {
+         "CLIENT_CLASS": "django_redis.client.DefaultClient",  # 默认
+        }
+    }
+}
+```
+
+```python
+# session配置  settings.py
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "default"
+```
+
+## 使用
+
+```
+>>> from django_redis import get_redis_connection
+>>> con = get_redis_connection("default")
+>>> con
+<redis.client.StrictRedis object at 0x2dc4510>
+```
+

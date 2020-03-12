@@ -1,0 +1,22 @@
+```
+<script type="text/javascript">
+    function fnAlert(a){
+        alert(a);
+    }
+    fnAlert(12345);
+</script>
+```
+
+```
+<script type="text/javascript">
+function fnAdd(iNum01,iNum02){
+    var iRs = iNum01 + iNum02;
+    return iRs;
+    alert('here!');
+}
+
+var iCount = fnAdd(3,4);
+alert(iCount);  //弹出7
+</script>
+```
+

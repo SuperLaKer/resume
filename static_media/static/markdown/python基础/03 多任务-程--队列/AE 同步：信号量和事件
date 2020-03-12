@@ -1,0 +1,27 @@
+#### 信号量
+
+- `from multiprocessing import Semaphore`
+- 用锁的原理，内置了一个计数器
+- 在同一时间 只能有指定数量的继承执行某一段被控制的代码
+
+#### 事件
+
+- `from multiprocessing import Event`
+- 一个事件可以使所有进程都进入阻塞状态
+- 也可以控制所有的进程解除阻塞
+- 事件被创建之后，默认是阻塞状态
+
+```
+from multiprocessing import Event
+
+e = Event()  # 默认阻塞False
+e.is_set()   # 查看事件状态，返回False
+e.wait()     # 值为False时，进入阻塞状态
+e.set()      # 改为True  
+e.clear()    # 改为False
+print("马上wait")
+e.wait()  # 为False阻塞
+
+print(123)
+```
+

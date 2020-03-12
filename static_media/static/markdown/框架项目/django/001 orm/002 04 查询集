@@ -1,0 +1,26 @@
+```
+# 查询集的特性：
+惰性查询
+缓存
+```
+
+```
+all  filter exclude Order_by
+
+books = Book.objects.all()  # 不会查询数据库
+book1 = Book.objects.get(id=1)  # 不会查询
+[x for x in book1]  # 查询数据库，结果缓存
+```
+
+```
+# 对查询集进行切片，会产生一个新的查询集
+# 不允许为负数
+```
+
+```
+# 查询集可以理解为列表
+# books[0].title
+# 如果不存在会抛出异常IndexError
+# 
+```
+

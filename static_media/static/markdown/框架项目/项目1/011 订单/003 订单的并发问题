@@ -1,0 +1,32 @@
+#### 悲观锁
+
+##### for update
+
+- 拿锁，查询库存量，数据库处理，库存增减，释放锁
+- 给订单的库存加上锁
+- `select stock from df_goods_sku where id=17 for update;`
+- 事物解锁，释放锁，商品减一后释放锁
+
+```
+django中的语句
+sku = GoodsSKU.objects.select_for_update().get(id=sku)  # 查商品
+select * from df_goods_sku where id=17 for update;
+num = sku.stock  # 查库存
+```
+
+#### 乐观锁
+
+- 查询数据的时候不加锁，更新的时候加锁
+- 判断更新的库存和之前查出的库存是否一致
+- 如果商品数量和查询时不一致，说明被修改了，
+- 但是库存不一定不够，需要再次查询，判断，更新数据，下单
+- `update df_goods_sku set stock=0,sales=1 where id=17 and stock=1;`
+- 保证查询时的库存和更新时的库存相等---数据库隔离级别---read-commited
+
+```
+判断库存--->更新数据--->下单
+
+查库存，根据库存和商品id，找到商品，更新库存，创建订单--->数据库隔离级别：read-commitd
+# 只能查到一行数据，如果为0，说明别人下单了，回滚，重新查询
+```
+

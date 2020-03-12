@@ -1,0 +1,7 @@
+```
+安装node.msi
+cmd:node -v（查看版本号）
+com:node server.js（运行server.js）
+默认会运行：server.js文件目录下的index.html
+```
+

@@ -1,0 +1,181 @@
+#### 数据类型 数值型、非数字型
+
+#### 共同特点（`str list tuple dict`）
+
+- 都是 序列  `sequence`（容器）数据结构
+- 取值 ["index"]  ["key"]
+- 遍历`for 变量 in 集合`   else
+- 计算长度---最大/小值---比较---删除
+- 链接  +  和  重复  *
+- 切片
+
+#### 目标
+
+- 字符串
+- 列表
+- 元组
+- 字典
+
+- 公共方法
+- 变量高级
+- 生成式--迭代器---生成器---协程
+
+#### 详细
+
+#### 列表
+
+- 可以存放任何类型的数据
+- 更多的存放相同类型的数据
+- 通过迭代遍历  对 list中的每一个元素执行相同的操作
+
+```
+# 增
+list.insert(index, data)
+list.append(data)
+list.extend(list2)
+# 删
+list.remove(data)  # 删除第一次出现的data
+list.pop()  # 删除末尾元素
+list.pop(index)  # 删除指定位置的数据
+list.clear()  # 清空lsit
+del list[index]
+# 改
+list[index] = data  # 修改某处数据
+# 查
+list[index]
+list.index(dta)  # 第一次出现的index
+in
+# 统计
+len()
+list.count(data)  # data共有几个
+# 排序
+list.sort()  # 升序
+list.sort(reverse=True)  # 降序
+list.reverse()  # 翻转、反序
+```
+
+####元组
+
+- 一般存放多种类型的数据
+- 所以for 很少使用
+- 元组的元素不能修改
+- `empyt_tuple = ()`
+- 只包含一个元素的元组
+- `single_tuple = (1, )`
+- `single_tuple = (5)`  int类型
+- 两个方法
+
+```
+# 应用场景
+- 函数的 参数 和 返回值  详见 005函数
+- 格式字符串  % ()
+- 让列表不可以被修改  # 使用迭代器实现的
+list(tuple1)  # type(tuple1)  list
+tuple(list1)  # type(list1)  tuple
+```
+
+```
+tuple.index(data)  # 返回下标
+tuple.count(data)  # 返回出现的次数
+```
+
+#### 字典
+
+- 无序
+- `{"key": value, "key1": "value1"}`
+- `dict1["age"] = 18`添加数据
+- `for key in dict`  # 通过key可以循环取出value  `dict["key"]`
+- 将多个字典放到同一个list中  `list[0]["key"]`
+- 双重for迭代
+
+```python
+dict["age"] = 16  # 如果有改变，没有添加
+dict.setdefault("weight")  # 添加key，默认值为None
+dict.setdefault("weight", 150)  
+
+# 删除
+dict.pop(key)  # 参数为键名
+dict.popitem()  # 随机删除，返回元组（删除的键值）
+dict.clear()  # 清空
+del dict["name"]
+dict.update(dict2)  # 把2覆盖更新到dict1
+
+# 字典for循环key
+```
+
+```
+keys()  # 所有key		get("key")  # 没有不报错		pop("key")  # 没报错        
+update(dict2)  # 合并覆盖1		dict.clear()  # 清空
+copy()       items()            popitem()
+values()    fromkeys()   setdefault()
+```
+
+```
+for k, v in dict.items():
+	print("key为：%s, 值为：%s" % (k, v))
+	
+print(dict.keys())
+print(dict.values())
+
+print(dict.get("name", "没有值，打印这里"))  # 设置默认值
+```
+
+#### Python函数 dict()
+
+####  dict()
+
+作用：dict() 函数用于创建一个字典。返回一个字典。
+
+**语法：**
+
+```
+dict(**kwarg)
+dict(mapping, **kwarg)
+dict(iterable, **kwarg)
+```
+
+参数说明：
+
+- **kwargs -- 关键字
+- mapping -- 元素的容器。
+- iterable -- 可迭代对象
+
+##### 实例
+
+```
+1 >>>dict()                        # 创建空字典
+2 {}
+3 >>> dict(a='a', b='b', t='t')     # 传入关键字
+4 {'a': 'a', 'b': 'b', 't': 't'}
+5 >>> dict(zip(['one', 'two', 'three'], [1, 2, 3]))   # 映射函数方式来构造字典
+6 {'three': 3, 'two': 2, 'one': 1} 
+7 >>> dict([('one', 1), ('two', 2), ('three', 3)])    # 可迭代对象方式来构造字典
+8 {'three': 3, 'two': 2, 'one': 1}
+9 >>>
+```
+
+#### 集合
+
+```python
+def aset():
+    a = set("boy")
+    print(a)  # {'o', 'b', 'y'}
+
+    a.add("python")  # 不拆分
+    a.update("go")  # 拆分
+    print(a)  # {'o', 'g', 'python', 'b', 'y'}
+
+    my_list = ["g", "o", 1, 2]
+
+    b = set(my_list)
+    print(b)
+
+    intersection = b & a  # 交集
+    diff = b - a  # 差集
+    union = b | a  # 并集
+
+    print(intersection)
+    print(diff)
+    print(union)
+```
+

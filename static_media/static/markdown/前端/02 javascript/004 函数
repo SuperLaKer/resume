@@ -1,0 +1,13 @@
+```
+函数定义与执行
+
+<script type="text/javascript">
+    // 函数定义
+    function fnAlert(){
+        alert('hello!');
+    }
+    // 函数执行
+    fnAlert();
+</script>
+```
+

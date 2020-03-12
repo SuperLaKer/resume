@@ -1,0 +1,40 @@
+#### mysql部署
+
+```
+docker pull mysql    # 拉取镜像
+
+docker run -id --name=mysql_can -p 33306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
+
+docker run -id --name=can_name  -v  宿主机目录:cans_file  --privileged=true  images:TAG  
+
+# 查看容器IP地址
+docker ps    # 参看容器
+
+# 进入容器
+docker exec -it mysql_can /bin/bash
+# 内部登陆mysql
+mysql -u root -p 
+123456
+
+# 外部登陆mysql
+mysql -u root -h 172.17.0.3 -P33306
+
+exit
+
+```
+
+#### nginx部署
+
+```
+nginx反向代理uwsgi--->代码
+nginx 代理 静态文件  
+browser  ---> ngnix + fdfs
+
+docker cp ngnix_can:/etc/nginx/nginx.conf /mnt/d/nginx.conf
+/etc/nginx/nginx.conf
+```
+
+#### redis 部署
+
+
+

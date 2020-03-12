@@ -1,0 +1,51 @@
+#### 容器相关
+
+```
+docker ps	# 查看正在运行容器
+docker ps -f status=exited		# 查看停止的容器 
+
+docker ps –a	# 查看所有的容器
+docker ps -l	# 查看最后一次运行的容器
+```
+
+#### 创建容器
+
+```
+docker run    # 创建容器
+```
+
+#### 交互式容器
+
+```
+docker run -it --name=容器名字 镜像:TAG /bin/bash    # 进入容器的shell
+
+exit退出容器 同时 进程结束  回到宿主机
+# 开启
+docker start 容器名字    
+# 进入
+docker exec -it 容器名字 /bin/bash
+```
+
+#### 守护式容器
+
+```
+docker run -id --name=ubuntu1 ubuntu
+
+docker exec -it 容器名字 /bin/bash    # 登陆方式
+
+docker start/stop  容器名字
+```
+
+#### 删除容器
+
+```
+# 不能删除正在运行的容器
+docker rm $can_id/can_name
+
+# 删除镜像，如果镜像有相关的容器则不能删除
+docker rmi image_id
+
+# 删除所有
+docker rm `docker ps -a -q`
+```
+

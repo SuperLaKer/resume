@@ -1,0 +1,36 @@
+#### 正则
+
+- 把符合规范的内容提取出来
+- 正则表达式 = 未经转义的字符串--->转义--->必须还能转义
+
+#### python使用正则表达式
+
+- `match`只判断开头，不判断结尾
+- 匹配到`\n`
+
+```
+import re
+
+result = re.match(正则表达式， 要匹配的字符串)
+result = re.match(r"hello", "hello world")  # 匹配以 "hello" 开头的
+resutl = re.match(r"[Hh]ello", world)  # 
+result = re.match(r"速度与激情\d", "速度与激情9")
+result = re.match(r"速度与激情[12345678]", "速度与激情8)
+result = re.match(r"速度与激情[1-35-8]", "速度与激情4)  # error
+result = re.match(r"速度与激情\w", "速度与激情_)
+# 如果匹配成功
+result = re.match(r"速度与激情[12345678]", "速度与激情8).group()
+print(result)
+```
+
+匹配一个字符
+
+- `.`：匹配任意1个字符  `\n除外`
+- ``[]`：匹配`[ ]`里面的1个	
+- `\d`：匹配1个数字
+- `\D`：匹配非数字
+- `\s`：匹配 空格 `Tab`
+- `\S`：匹配非空格
+- `\w`：匹配大小写字母、数字、下划线   （语言）
+- `\w`：非
+

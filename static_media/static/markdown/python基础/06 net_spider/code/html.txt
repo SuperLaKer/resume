@@ -1,0 +1,724 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="baidu-site-verification" content="Pi7FsqRWdy" />
+    <title>段子网&#160;&#45;&#160; ^__^ 段子网收录最新段子、经典段子、段子来了、一句话段子、搞笑图片，生活中不能没有段子 ^__^ </title>
+    <link rel="stylesheet" href="//lib.baomitu.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://duanziwang.com/usr/themes/seventeen/screen.css">
+    <link rel="shortcut icon" href="//duanziwang.com/favicon.ico" />
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img src='//duanziwang.com/300-orange.png'></div>
+    <meta name="description" content=" ^__^ 段子网收录最新段子、经典段子、段子来了、一句话段子、搞笑图片，生活中不能没有段子 ^__^ " />
+<meta name="keywords" content="段子网,最新段子,段子,段子来了,搞笑段子,2019段子,笑话段子,一句话段子" />
+<meta name="generator" content="Typecho 1.1/17.10.30" />
+<meta name="template" content="seventeen" />
+<link rel="pingback" href="https://duanziwang.com/action/xmlrpc" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://duanziwang.com/action/xmlrpc?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://duanziwang.com/action/xmlrpc?wlw" />
+<link rel="alternate" type="application/rss+xml" title="段子网 &raquo; RSS 2.0" href="https://duanziwang.com/feed/" />
+<link rel="alternate" type="application/rdf+xml" title="段子网 &raquo; RSS 1.0" href="https://duanziwang.com/feed/rss/" />
+<link rel="alternate" type="application/atom+xml" title="段子网 &raquo; ATOM 1.0" href="https://duanziwang.com/feed/atom/" />
+
+<link rel="amphtml" href="https://duanziwang.com/ampindex">
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?805519f49ee7b4e242d02aeb20885385";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script src="//msite.baidu.com/sdk/c.js?appid=1597058681892587"></script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+      
+</head>
+<body class="home-template">
+
+    <!-- start header -->
+    <header class="main-header" style="background-image: url(https://duanziwang.com/usr/themes/seventeen/bg.jpg)"">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">					<h1><a href="https://duanziwang.com/"><img src='//duanziwang.com/300.png' height="75" width="75" /></a></h1>
+                    <h1><a href="https://duanziwang.com/">段子网</a></h1>
+                    <h2 class="hide"> ^__^ 段子网收录最新段子、经典段子、段子来了、一句话段子、搞笑图片，生活中不能没有段子 ^__^ </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start navigation -->
+    <nav class="main-navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="navbar-header">
+                        <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars"></i>
+                        </span>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                    <li class="nav-current"><a href="https://duanziwang.com/">首页</a></li>
+                    <!--<li><a href="http://duanziwang.com/goodluck"><i class="fa fa-plane"></i>&ensp;手气不错</a></li>-->
+					<li><a href="//duanziwang.com/category/%E7%BB%8F%E5%85%B8%E6%AE%B5%E5%AD%90/" title="经典段子">经典段子</a></li>
+					<li><a href="//duanziwang.com/category/%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%AE%B5%E5%AD%90/" title="一句话段子">一句话段子</a></li>
+					<li><a href="//duanziwang.com/category/%E6%AE%B5%E5%AD%90%E6%9D%A5%E4%BA%86/" title="段子来了">段子来了</a></li>
+					<li><a href="//duanziwang.com/category/%E6%90%9E%E7%AC%91%E5%9B%BE/" title="搞笑图">搞笑图</a></li>
+					<li><a href="//duanziwang.com/category/%E7%BB%8F%E5%85%B8%E8%AF%8D%E5%8F%A5/" title="经典词句">经典词句</a></li>
+					<li><a href="https://t.duanziwang.com/" title="丹熏山">丹熏山</a></li>
+
+                                                            <li><a href="https://duanziwang.com/hot.html" title="排行榜">排行榜</a></li>
+                                        <li><a href="https://duanziwang.com/tags.html" title="标签">标签</a></li>
+                                        <li><a href="https://duanziwang.com/about.html" title="关于">关于</a></li>
+                                        <li><a href="https://duanziwang.com/message.html" title="留言">留言</a></li>
+                                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation -->
+
+<section class="content-wrap">
+        <div class="container">
+            <div class="row">
+
+
+                <main class="col-md-8 main-content">
+               
+               <!-- start Adsense widget -->
+<div class="widget">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- AutoSize2018-2 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0830628158749802"
+     data-ad-slot="7953358243"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- end Adsense widget --> 
+
+
+<article id="1803" class="post">
+
+    
+    <div class="post-head">
+        <h1 class="post-title"><a href="https://duanziwang.com/1803.html">我深圳住的房子都可以卖700多万了，突然有种冲动，卖了房子出去周游世界，一切都准备好了，心动不如行动可是，可是房东他，他，他，他他妈的不同意！</a></h1>
+        <div class="post-meta">
+            <time class="post-date" datetime="2019-04-29T15:11:13+08:00">2019-04-29</time>&ensp;
+            <time class="post-date">37°C</time>&ensp;
+            <time class="post-date"><a href="javascript:;" class="post-like" data-pid="1803"><i class="fa-thumbs-ups"></i>赞 (<span>1</span>)</a></time>
+        </div>
+    </div>
+ <div class="post-content">            </div>
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+        <i class="fa fa-folder-open-o"></i><a href="https://duanziwang.com/category/%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%AE%B5%E5%AD%90/">一句话段子</a>&nbsp;&nbsp;
+            <i class="fa fa-tags"></i><a href="https://duanziwang.com/tag/%E6%88%BF%E4%B8%9C/">房东</a> , <a href="https://duanziwang.com/tag/%E6%B7%B1%E5%9C%B3/">深圳</a>        </div>
+    </footer>
+</article>
+
+
+<article id="1799" class="post">
+
+    
+    <div class="post-head">
+        <h1 class="post-title"><a href="https://duanziwang.com/1799.html">小时候假期妈妈把游戏机放我书包里，我找了一个假期没找到…</a></h1>
+        <div class="post-meta">
+            <time class="post-date" datetime="2019-04-29T15:07:45+08:00">2019-04-29</time>&ensp;
+            <time class="post-date">37°C</time>&ensp;
+            <time class="post-date"><a href="javascript:;" class="post-like" data-pid="1799"><i class="fa-thumbs-ups"></i>赞 (<span>3</span>)</a></time>
+        </div>
+    </div>
+ <div class="post-content">            </div>
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+        <i class="fa fa-folder-open-o"></i><a href="https://duanziwang.com/category/%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%AE%B5%E5%AD%90/">一句话段子</a>&nbsp;&nbsp;
+            <i class="fa fa-tags"></i><a href="https://duanziwang.com/tag/%E6%B8%B8%E6%88%8F%E6%9C%BA/">游戏机</a> , <a href="https://duanziwang.com/tag/%E5%A6%88%E5%A6%88/">妈妈</a>        </div>
+    </footer>
+</article>
+
+
+<article id="1798" class="post">
+
+    
+    <div class="post-head">
+        <h1 class="post-title"><a href="https://duanziwang.com/1798.html">带女朋友来看复联，复仇者集结的时候她问我，大黄蜂怎么还不来？我该怎么回答？</a></h1>
+        <div class="post-meta">
+            <time class="post-date" datetime="2019-04-29T15:07:20+08:00">2019-04-29</time>&ensp;
+            <time class="post-date">32°C</time>&ensp;
+            <time class="post-date"><a href="javascript:;" class="post-like" data-pid="1798"><i class="fa-thumbs-ups"></i>赞 (<span>1</span>)</a></time>
+        </div>
+    </div>
+ <div class="post-content">            </div>
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+        <i class="fa fa-folder-open-o"></i><a href="https://duanziwang.com/category/%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%AE%B5%E5%AD%90/">一句话段子</a>&nbsp;&nbsp;
+            <i class="fa fa-tags"></i><a href="https://duanziwang.com/tag/%E5%A5%B3%E6%9C%8B%E5%8F%8B/">女朋友</a> , <a href="https://duanziwang.com/tag/%E5%A4%8D%E8%81%94/">复联</a>        </div>
+    </footer>
+</article>
+
+
+<article id="1797" class="post">
+
+    
+    <div class="post-head">
+        <h1 class="post-title"><a href="https://duanziwang.com/1797.html">盆栽很肥沃</a></h1>
+        <div class="post-meta">
+            <time class="post-date" datetime="2019-04-29T15:06:55+08:00">2019-04-29</time>&ensp;
+            <time class="post-date">36°C</time>&ensp;
+            <time class="post-date"><a href="javascript:;" class="post-like" data-pid="1797"><i class="fa-thumbs-ups"></i>赞 (<span>0</span>)</a></time>
+        </div>
+    </div>
+ <div class="post-content">        <p>媳妇家农村的，最近想弄点盆栽。<br>找了好些土回来，还有一些圆圆的疙瘩。<br>她让我把那些圆圆的疙瘩揉碎用来拌土，说拌好的土质会很适合盆栽的生长。<br>果然，种好后盆栽很肥沃。<br>我问媳妇那疙瘩是什么东西，媳妇答“那是马粪！”<br>呃……那你让我用手揉？</p>    </div>
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+        <i class="fa fa-folder-open-o"></i><a href="https://duanziwang.com/category/%E7%BB%8F%E5%85%B8%E6%AE%B5%E5%AD%90/">经典段子</a>&nbsp;&nbsp;
+            <i class="fa fa-tags"></i><a href="https://duanziwang.com/tag/%E5%AA%B3%E5%A6%87/">媳妇</a> , <a href="https://duanziwang.com/tag/%E5%86%9C%E6%9D%91/">农村</a>        </div>
+    </footer>
+</article>
+
+
+<article id="1796" class="post">
+
+    
+    <div class="post-head">
+        <h1 class="post-title"><a href="https://duanziwang.com/1796.html">早上看到一MM穿红袜子，就跟她开玩笑：你本命年啊？ 她顿时瞪大双眼：你看到我内裤了？ 我：........</a></h1>
+        <div class="post-meta">
+            <time class="post-date" datetime="2019-04-29T15:05:23+08:00">2019-04-29</time>&ensp;
+            <time class="post-date">40°C</time>&ensp;
+            <time class="post-date"><a href="javascript:;" class="post-like" data-pid="1796"><i class="fa-thumbs-ups"></i>赞 (<span>1</span>)</a></time>
+        </div>
+    </div>
+ <div class="post-content">            </div>
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+        <i class="fa fa-folder-open-o"></i><a href="https://duanziwang.com/category/%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%AE%B5%E5%AD%90/">一句话段子</a>&nbsp;&nbsp;
+            <i class="fa fa-tags"></i><a href="https://duanziwang.com/tag/MM/">MM</a> , <a href="https://duanziwang.com/tag/%E5%86%85%E8%A3%A4/">内裤</a>        </div>
+    </footer>
+</article>
+
+
+<article id="1795" class="post">
+
+    
+    <div class="post-head">
+        <h1 class="post-title"><a href="https://duanziwang.com/1795.html">图书馆看书</a></h1>
+        <div class="post-meta">
+            <time class="post-date" datetime="2019-04-29T10:27:19+08:00">2019-04-29</time>&ensp;
+            <time class="post-date">48°C</time>&ensp;
+            <time class="post-date"><a href="javascript:;" class="post-like" data-pid="1795"><i class="fa-thumbs-ups"></i>赞 (<span>1</span>)</a></time>
+        </div>
+    </div>
+ <div class="post-content">        <p>我有一哥们知识面特别宽，什么都难不倒他，我问他怎么能知道那么多？<br>他得意地说:我在大学里啥也没干，没事就去图书馆看书，所以懂得多了点。<br>我啧啧啧地羡慕:你真牛！<br>他无奈地摇摇头说:特么要能谈个恋爱，谁特么还这么干！……</p>    </div>
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+        <i class="fa fa-folder-open-o"></i><a href="https://duanziwang.com/category/%E7%BB%8F%E5%85%B8%E6%AE%B5%E5%AD%90/">经典段子</a>&nbsp;&nbsp;
+            <i class="fa fa-tags"></i><a href="https://duanziwang.com/tag/%E6%81%8B%E7%88%B1/">恋爱</a> , <a href="https://duanziwang.com/tag/%E5%A4%A7%E5%AD%A6/">大学</a>        </div>
+    </footer>
+</article>
+
+
+<article id="1794" class="post">
+
+    
+    <div class="post-head">
+        <h1 class="post-title"><a href="https://duanziwang.com/1794.html">单身久了，看只鹅都眉清目秀的。</a></h1>
+        <div class="post-meta">
+            <time class="post-date" datetime="2019-04-27T08:55:00+08:00">2019-04-27</time>&ensp;
+            <time class="post-date">186°C</time>&ensp;
+            <time class="post-date"><a href="javascript:;" class="post-like" data-pid="1794"><i class="fa-thumbs-ups"></i>赞 (<span>8</span>)</a></time>
+        </div>
+    </div>
+ <div class="post-content">            </div>
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+        <i class="fa fa-folder-open-o"></i><a href="https://duanziwang.com/category/%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%AE%B5%E5%AD%90/">一句话段子</a>&nbsp;&nbsp;
+            <i class="fa fa-tags"></i><a href="https://duanziwang.com/tag/%E5%8D%95%E8%BA%AB/">单身</a>        </div>
+    </footer>
+</article>
+
+
+<article id="1793" class="post">
+
+    
+    <div class="post-head">
+        <h1 class="post-title"><a href="https://duanziwang.com/1793.html">最穷的时候</a></h1>
+        <div class="post-meta">
+            <time class="post-date" datetime="2019-04-26T10:30:00+08:00">2019-04-26</time>&ensp;
+            <time class="post-date">176°C</time>&ensp;
+            <time class="post-date"><a href="javascript:;" class="post-like" data-pid="1793"><i class="fa-thumbs-ups"></i>赞 (<span>4</span>)</a></time>
+        </div>
+    </div>
+ <div class="post-content">        <p>最穷的时候：<br>别人吃火锅，我吃火锅底料；<br>别人喝酸奶，我舔酸奶盖儿；<br>别人吃西瓜，我吃西瓜皮；<br>别人吹空调，我吹空调外‍‍‍‍机……</p>    </div>
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+        <i class="fa fa-folder-open-o"></i><a href="https://duanziwang.com/category/%E7%BB%8F%E5%85%B8%E6%AE%B5%E5%AD%90/">经典段子</a>&nbsp;&nbsp;
+            <i class="fa fa-tags"></i><a href="https://duanziwang.com/tag/%E8%A5%BF%E7%93%9C/">西瓜</a> , <a href="https://duanziwang.com/tag/%E7%A9%BA%E8%B0%83/">空调</a> , <a href="https://duanziwang.com/tag/%E7%81%AB%E9%94%85/">火锅</a> , <a href="https://duanziwang.com/tag/%E9%85%B8%E5%A5%B6/">酸奶</a>        </div>
+    </footer>
+</article>
+
+
+<article id="1792" class="post">
+
+    
+    <div class="post-head">
+        <h1 class="post-title"><a href="https://duanziwang.com/1792.html">我侄子问我哥：“爸，你有量角器吗？”我哥玩着手机，心不在焉的回答：“脚气怎么量，我只是闻过啊...”</a></h1>
+        <div class="post-meta">
+            <time class="post-date" datetime="2019-04-25T00:30:34+08:00">2019-04-25</time>&ensp;
+            <time class="post-date">351°C</time>&ensp;
+            <time class="post-date"><a href="javascript:;" class="post-like" data-pid="1792"><i class="fa-thumbs-ups"></i>赞 (<span>11</span>)</a></time>
+        </div>
+    </div>
+ <div class="post-content">            </div>
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+        <i class="fa fa-folder-open-o"></i><a href="https://duanziwang.com/category/%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%AE%B5%E5%AD%90/">一句话段子</a>&nbsp;&nbsp;
+            <i class="fa fa-tags"></i><a href="https://duanziwang.com/tag/%E6%89%8B%E6%9C%BA/">手机</a> , <a href="https://duanziwang.com/tag/%E4%BE%84%E5%AD%90/">侄子</a> , <a href="https://duanziwang.com/tag/%E8%84%9A%E6%B0%94/">脚气</a>        </div>
+    </footer>
+</article>
+
+
+<article id="1791" class="post">
+
+    
+    <div class="post-head">
+        <h1 class="post-title"><a href="https://duanziwang.com/1791.html">一条黑色的蛇</a></h1>
+        <div class="post-meta">
+            <time class="post-date" datetime="2019-04-25T00:29:53+08:00">2019-04-25</time>&ensp;
+            <time class="post-date">211°C</time>&ensp;
+            <time class="post-date"><a href="javascript:;" class="post-like" data-pid="1791"><i class="fa-thumbs-ups"></i>赞 (<span>9</span>)</a></time>
+        </div>
+    </div>
+ <div class="post-content">        <p>我们隔壁有一个80多岁的大爷，昨天在小区树下发现一条黑色的蛇，都冻僵了！<br>他就把蛇揣到怀里面，想给它一点温暖。今天一大早他就在树上挂了个牌子:“不准随地大小便！”</p>    </div>
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+        <i class="fa fa-folder-open-o"></i><a href="https://duanziwang.com/category/%E7%BB%8F%E5%85%B8%E6%AE%B5%E5%AD%90/">经典段子</a>&nbsp;&nbsp;
+            <i class="fa fa-tags"></i><a href="https://duanziwang.com/tag/%E5%A4%A7%E7%88%B7/">大爷</a>        </div>
+    </footer>
+</article>
+
+
+<nav class="pagination" role="navigation">
+        
+            <span class="page-number">第 1 页 / 共 161 页</span>
+        <a class="next" title="" href="https://duanziwang.com/page/2/"><x aria-label="Next" class="older-posts"><i class="fa fa-angle-right"></i></x></a></nav>
+
+
+                </main>
+
+
+
+               <aside class="col-md-4 sidebar">
+                <!-- start widget -->
+<!-- end widget --> 
+
+
+
+<!-- start Good Luck widget -->
+<!--
+<div class="widget">
+<h4 class="title">手气不错</h4>
+  <div class="content community">
+  <a href="http://duanziwang.com/goodluck"><img src="http://duanziwang.com/usr/themes/seventeen/goodluck.png" width="100%" alt="手气不错"></a>
+  </div>
+</div>
+-->
+<!-- end Good Luck widget --> 
+
+<!-- start widget -->
+<div class="widget">
+  <h4 class="title">随机段子</h4>
+  <div class="category">
+  <li><a href="https://duanziwang.com/1694.html" title="今晚你可以为所欲为了">今晚你可以为所欲为了</a></li><li><a href="https://duanziwang.com/1597.html" title="社会只会有三个行业的人告诉你，我这个行业很好干，快来吧，一是保险业，二是传销业，三是微商业。">社会只会有三个行业的人告诉你，我这个行业很好干，快来吧，一是保险业，二是传销业，三是微商业。</a></li><li><a href="https://duanziwang.com/540.html" title="搞笑签名">搞笑签名</a></li><li><a href="https://duanziwang.com/683.html" title="条条大路通罗马，每条都有收费站。">条条大路通罗马，每条都有收费站。</a></li><li><a href="https://duanziwang.com/547.html" title="要想生活过得去，就得一眼睁一眼闭。">要想生活过得去，就得一眼睁一眼闭。</a></li>  </div>
+</div>
+<!-- end widget --> 
+
+<!-- start Adsense widget 1 -->
+<div class="widget">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- AutoSize2018-2 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0830628158749802"
+     data-ad-slot="7953358243"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- end Adsense widget 1--> 
+
+<!-- start tag cloud widget -->
+<div class="widget">
+  <h4 class="title">标签云</h4>
+  <div class="content tag-cloud">
+      
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E8%80%81%E5%A9%86/">老婆</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%9C%8B%E5%8F%8B/">朋友</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E9%87%87%E9%87%87/">采采</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E8%80%81%E5%85%AC/">老公</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%AE%B5%E5%AD%90%E6%9D%A5%E4%BA%86/">段子来了</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A5%B3%E6%9C%8B%E5%8F%8B/">女朋友</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E8%80%81%E5%B8%88/">老师</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%AA%B3%E5%A6%87/">媳妇</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%84%BF%E5%AD%90/">儿子</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%90%8C%E4%BA%8B/">同事</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%89%8B%E6%9C%BA/">手机</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E8%80%81%E6%9D%BF/">老板</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A5%B3%E4%BA%BA/">女人</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%90%8C%E5%AD%A6/">同学</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%94%B7%E4%BA%BA/">男人</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%94%B5%E8%AF%9D/">电话</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A4%A7%E5%AD%A6/">大学</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%93%A5%E4%BB%AC/">哥们</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%BB%93%E5%A9%9A/">结婚</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A5%B3%E7%94%9F/">女生</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A5%B3%E5%8F%8B/">女友</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%B0%8F%E6%98%8E/">小明</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%BE%8E%E5%A5%B3/">美女</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%94%B7%E6%9C%8B%E5%8F%8B/">男朋友</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E9%A2%86%E5%AF%BC/">领导</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A6%88%E5%A6%88/">妈妈</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%85%84%E5%BC%9F/">兄弟</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%8C%BB%E9%99%A2/">医院</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%9C%8B%E5%8F%8B%E5%9C%88/">朋友圈</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E4%B8%AD%E5%9B%BD/">中国</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%85%AC%E5%8F%B8/">公司</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%8D%95%E8%BA%AB/">单身</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A5%B3%E7%A5%9E/">女神</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%8C%BB%E7%94%9F/">医生</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%AF%B9%E8%81%94/">对联</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%AD%A6%E7%94%9F/">学生</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%88%86%E6%89%8B/">分手</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%8C%97%E4%BA%AC/">北京</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%B8%88%E5%82%85/">师傅</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%B7%A5%E4%BD%9C/">工作</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%80%80%E5%AD%95/">怀孕</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E9%97%BA%E8%9C%9C/">闺蜜</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%B7%A5%E8%B5%84/">工资</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%A8%8B%E5%BA%8F%E5%91%98/">程序员</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%88%B1%E6%83%85/">爱情</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%AD%A9%E5%AD%90/">孩子</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%8E%95%E6%89%80/">厕所</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A7%91%E5%A8%98/">姑娘</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E4%BA%BA%E7%94%9F/">人生</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E4%B8%96%E7%95%8C/">世界</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%BE%AE%E4%BF%A1/">微信</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A6%B9%E5%AD%90/">妹子</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%AF%B9%E8%B1%A1/">对象</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E9%AB%98%E4%B8%AD/">高中</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E9%AB%98%E8%80%83/">高考</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%9D%A1%E8%A7%89/">睡觉</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%8B%97/">狗</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E9%82%BB%E5%B1%85/">邻居</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%B3%97%E4%BA%8B%E6%92%AD%E6%8A%A5/">糗事播报</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%94%9F%E6%B4%BB/">生活</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%AE%BF%E8%88%8D/">宿舍</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E4%BD%9C%E4%B8%9A/">作业</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%94%B7%E5%8F%8B/">男友</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%81%8B%E7%88%B1/">恋爱</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%97%A5%E6%9C%AC/">日本</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%94%B7%E7%94%9F/">男生</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E8%A1%A3%E6%9C%8D/">衣服</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%88%B8%E7%88%B8/">爸爸</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%9B%B8%E4%BA%B2/">相亲</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%94%90%E5%83%A7/">唐僧</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%9F%AD%E4%BF%A1/">短信</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E8%80%81%E7%8E%8B/">老王</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E4%BA%8C%E8%83%8E/">二胎</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E4%BF%9D%E9%99%A9/">保险</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A5%B3%E5%AD%A9/">女孩</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%96%9D%E9%85%92/">喝酒</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A7%90%E5%A7%90/">姐姐</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%AE%A4%E5%8F%8B/">室友</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E9%93%B6%E8%A1%8C/">银行</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%85%AC%E4%BA%A4%E8%BD%A6/">公交车</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E4%B8%96%E7%95%8C%E6%9D%AF/">世界杯</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%8D%95%E4%BD%8D/">单位</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%B8%B8%E6%88%8F/">游戏</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%B4%97%E6%BE%A1/">洗澡</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%B8%85%E6%98%8E/">清明</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A4%A7%E5%93%A5/">大哥</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%A5%B3%E5%84%BF/">女儿</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%A9%BA%E8%B0%83/">空调</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%94%B5%E5%BD%B1/">电影</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%8A%A4%E5%A3%AB/">护士</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E9%A6%99%E8%95%89/">香蕉</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%96%B9%E4%BE%BF%E9%9D%A2/">方便面</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%A5%9E%E5%9B%9E%E5%A4%8D/">神回复</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E5%8F%8C%E5%8D%81%E4%B8%80/">双十一</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%97%B6%E9%97%B4/">时间</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%94%B5%E8%84%91/">电脑</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E9%BB%84%E7%93%9C/">黄瓜</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E7%8C%AA/">猪</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E6%95%85%E4%BA%8B/">故事</a>
+  
+<a rel="tag" href="https://duanziwang.com/tag/%E8%AD%A6%E5%AF%9F/">警察</a>
+  </div>
+</div>
+<!-- end tag cloud widget --> 
+
+<!-- start widget -->
+<div class="widget">
+  <h4 class="title">分类</h4>
+  <div class="category">
+  <ul class="widget-list"><li class="category-level-0 category-parent"><a href="https://duanziwang.com/category/%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%AE%B5%E5%AD%90/">一句话段子</a></li><li class="category-level-0 category-parent"><a href="https://duanziwang.com/category/%E6%90%9E%E7%AC%91%E5%9B%BE/">搞笑图</a></li><li class="category-level-0 category-parent"><a href="https://duanziwang.com/category/%E7%BB%8F%E5%85%B8%E8%AF%8D%E5%8F%A5/">经典词句</a></li><li class="category-level-0 category-parent"><a href="https://duanziwang.com/category/%E7%BB%8F%E5%85%B8%E6%AE%B5%E5%AD%90/">经典段子</a></li><li class="category-level-0 category-parent"><a href="https://duanziwang.com/category/%E6%AE%B5%E5%AD%90%E6%9D%A5%E4%BA%86/">段子来了</a></li></ul>  </div>
+</div>
+<!-- end widget --> 
+
+<!-- start tag cloud widget -->
+<div class="widget">
+  <h4 class="title">搜索</h4>
+  <div class="content community">
+                <form id="search" method="post" action="https://duanziwang.com/" role="search">
+                    <label for="s" class="sr-only">搜索关键字</label>
+                    <input type="text" name="s" class="text asearch" placeholder="输入关键字搜索" />
+                </form>
+  </div>
+</div>
+<!-- end tag cloud widget --> 
+
+<!-- start widget -->
+<!-- end widget -->
+</aside>
+            </div class="row">
+        </div class="container">
+</section>
+
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="widget">
+                        <h4 class="title">最新段子</h4>
+                        <div class="content recent-post">
+                                                        <div class="recent-single-post">
+                                    <a href="https://duanziwang.com/1803.html" class="post-title">
+                                    我深圳住的房子都可以卖700多万了，突然有种冲动，卖了房子出去周游世界，一切都准备好了，心动不如行动可是，可是房东他，他，他，他他妈的不同意！</a>
+                                </div>
+                                <div class="recent-single-post">
+                                    <a href="https://duanziwang.com/1799.html" class="post-title">
+                                    小时候假期妈妈把游戏机放我书包里，我找了一个假期没找到…</a>
+                                </div>
+                                <div class="recent-single-post">
+                                    <a href="https://duanziwang.com/1798.html" class="post-title">
+                                    带女朋友来看复联，复仇者集结的时候她问我，大黄蜂怎么还不来？我该怎么回答？</a>
+                                </div>
+                                <div class="recent-single-post">
+                                    <a href="https://duanziwang.com/1797.html" class="post-title">
+                                    盆栽很肥沃</a>
+                                </div>
+                                <div class="recent-single-post">
+                                    <a href="https://duanziwang.com/1796.html" class="post-title">
+                                    早上看到一MM穿红袜子，就跟她开玩笑：你本命年啊？ 她顿时瞪大双眼：你看到我内裤了？ 我：........</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4"><div class="widget">                        <h4 class="title">最新评论</h4>                        <div class="content recent-post">                                                        <div class="recent-single-post">                                    <a href="https://duanziwang.com/message.html#comment-61" class="post-title">                                    应该出个app端，加个收藏功能</a>                                    <div class="date">2019年04月19日 # liao</div>                                </div>                                             <div class="recent-single-post">                                    <a href="https://duanziwang.com/1605.html#comment-56" class="post-title">                                    哈哈哈哈哈哈哈哈哈哈 我也试过</a>                                    <div class="date">2019年02月25日 # 燃脂减肥糖omg8796</div>                                </div>                                             <div class="recent-single-post">                                    <a href="https://duanziwang.com/1571.html#comment-53" class="post-title">                                    一定没看过《三体》，忘记了有智子。</a>                                    <div class="date">2019年02月18日 # 逊怡</div>                                </div>                                             <div class="recent-single-post">                                    <a href="https://duanziwang.com/1480.html#comment-51" class="post-title">                                    明年你可以考虑去日本，你觉得呢</a>                                    <div class="date">2019年02月05日 # 阔以</div>                                </div>                                             <div class="recent-single-post">                                    <a href="https://duanziwang.com/message.html#comment-50" class="post-title">                                    怎么没有手机版的啊？求手机版本下载安装。</a>                                    <div class="date">2019年01月28日 # 屎君子</div>                                </div>                                     </div>                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="widget">
+                        <h4 class="title">友情链接</h4>
+                        <div class="content tag-cloud friend-links">
+<a href="https://t.duanziwang.com/" title="丹熏山">丹熏山</a>
+<a href="https://www.leijimu.com/" title="雷击木" target="_blank">雷击木</a>
+<a href="https://blog.leijimu.com/" title="垒积木" target="_blank">垒积木</a>
+<a href="https://www.kunlunqiu.com/" title="昆仑丘" target="_blank">昆仑丘</a>
+<a href="http://www.walxh.com/" title="我爱冷笑话"  target="_blank">我爱冷笑话</a>
+<a href="https://www.spreadqd.com/" title="斯普瑞德" target="_blank">斯普瑞德</a>
+<a href="https://www.8wms.com/" title="8WMS" target="_blank">8WMS</a>
+<a href="https://www.fuikit.com/" title="FUIKIT" target="_blank">FUIKIT</a>
+<a href="https://www.gugegt.com/" title="谷歌GT" target="_blank">谷歌GT</a>
+<a href="https://www.mainrico.xyz/" title="梅里众合" target="_blank">梅里众合</a>
+<a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=ziemp8od" title="阿里云驱动" target="_blank">阿里云驱动</a>
+<a href="http://www.chinadmoz.org/" title="DMOZ目录" target="_blank">DMOZ目录</a> 
+
+                        </div>
+                </div></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span>Copyright &copy; 段子网&nbsp;&nbsp;<a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=ziemp8od" title="阿里云驱动" target="_blank">由阿里云驱动</a> 
+<span class="btime">&emsp; 运行时间：9年117天14小时43分</span>&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank" rel="external nofollow">鲁ICP备15016951号-1</a></span><span><span><script id="_waugkn">var _wau = _wau || []; _wau.push(["small", "owzsinjzqx", "gkn"]);</script><script async src="//waust.at/s.js"></script></span></span></div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <script src="//lib.baomitu.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//lib.baomitu.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://duanziwang.com/usr/themes/seventeen/js.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://duanziwang.com/usr/plugins/Like/css/style.css" />
+<script type="text/javascript" src="https://duanziwang.com/usr/plugins/Like/js/jquery.js"></script>
+<script type="text/javascript" src="https://duanziwang.com/usr/plugins/Like/js/jquery.fs.macaroon.js"></script>
+<script>
+    $(".post-like").on("click", function(){
+    	var th = $(this);
+		var id = th.attr('data-pid');
+		var cookies = $.macaroon('_syan_like') || "";
+		if (!id || !/^\d{1,10}$/.test(id)) return;
+		if (-1 !== cookies.indexOf("," + id + ",")) return alert("您已经赞过了！");
+		cookies ? cookies.length >= 160 ? (cookies = cookies.substring(0, cookies.length - 1), cookies = cookies.substr
+(1).split(","), cookies.splice(0, 1), cookies.push(id), cookies = cookies.join(","), $.macaroon("_syan_like", "," + cookies + 
+",")) : $.macaroon("_syan_like", cookies + id + ",") : $.macaroon("_syan_like", "," + id + ",");
+		$.post('https://duanziwang.com/action/like?up',{
+		cid:id
+		},function(data){
+		th.addClass('actived');
+		var zan = th.find('span').text();
+		th.find('span').text(parseInt(zan) + 1);
+		},'json');
+	});
+</script>
+<script type="text/javascript">//<![CDATA[
+	window.jQuery || document.write("<script type=\"text/javascript\" src=\"https://cdn.staticfile.org/jquery/1.8.3/jquery.min.js\"><\/script>")//]]></script>
+<script type="text/javascript">$(document).ready(function(){
+            $(".post-zan").on("click", function(){
+                var zan = $(this);
+                $.post("https://duanziwang.com/action/Zan?_=2ca1a8daf23ce21cdaa09e80a861d6f2", {cid: zan.attr("data-cid")},function(data){
+                        if(data.result == 1){
+                            var val = zan.find("span").text();
+                            zan.find("span").text(parseInt(val) + 1);
+                        }
+                        //alert(data.message);
+                }, "json");
+            })
+})</script>
+</body>
+</html>

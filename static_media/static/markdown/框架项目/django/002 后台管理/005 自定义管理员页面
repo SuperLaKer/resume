@@ -1,0 +1,4 @@
+- django包中
+- `site=package---django---contrib---admin---templates---admin---base_site.html`
+- 定义一个相同的页面，在`templates下，新建admin，新建base_site.html`
+

@@ -1,0 +1,19 @@
+```python
+# F对象
+# 用于类属性之间的比较
+from django.db.models import F
+Book.objects.filter(bread__gt=F("comment"))  # bread>comment
+Book.objects.filter(bread__gt=F("comment")*2)  # bread>comment*2
+```
+
+```PYTHON
+# Q对象
+# 逻辑查询not, and, or
+from django.db.models import Q
+Book.objects.db.filter(id__gt>3, bread__gt=30)  # id>3且bread>30
+Book.objects.db.filter(Q(id__gt>3)&Q(bread__gt=30)  # 且
+Book.objects.db.filter(Q(id__gt>3)|Q(bread__gt=30)  # 或
+Book.objects.db.filter(~Q(id__gt=3))  # 非
+BookInfo.objects.exclude(id=3)  # 不包括
+```
+

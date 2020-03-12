@@ -1,0 +1,52 @@
+#### 进程池
+
+- 为什么需要进程池？
+  - 开启的进程多了，效率低
+  - 每开启进程，需要为每个进程准备独立的内存空间
+  - 寄存器  堆栈  文件
+  - 操作系统调度进程
+
+#### python中的进程池
+
+- 先创建一个属于进程的池子
+- 这个池子指定能存放多少个进程
+- 先将这些进程创建好
+- 用完归还到进程池
+
+#### 高级线程池
+
+- 线程池有范围最少几个线程，最多几个线程
+- 根据用户多少，自动调整
+
+- `p.map(func, iterable)`   默认自带`close`和`join`
+- `p.apply(func, args=(x, ))`  同步
+- `p.apply_asyn()`    异步调用，和主进程完全异步，需要手动close和join  
+
+```python
+p.map(func, [1, 2, 3])
+```
+
+```python
+def func(n):
+    print("start func %s" % n, os.getpid())
+    time.sleep(random.random())
+    print("enddd func %s" % n, os.getpid())
+
+
+if __name__ == '__main__':
+    p1 = multiprocessing.Pool()
+    p2 = multiprocessing.Pool(2)
+    for i in range(10):  # 循环添加10个任务
+        p1.apply(func, args=(i,))  # apply默认是前一个执行完，再添加另外一个任务
+
+    print("*" * 100)
+
+    for ii in range(10, 20):
+        p2.apply_async(func, args=(ii ** 2, ))
+
+    p2.close()  # 不再接收任务，才能拿使用join感知
+    p2.join()  # error 进程池中的进程不会结束，用完了还回去
+```
+
+#### 进程池的返回值
+

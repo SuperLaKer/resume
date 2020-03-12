@@ -1,0 +1,33 @@
+### 常用方法
+
+- response.text
+- response.context
+- response.status_code
+- response.request.headers
+- response.headers
+
+### 断言和部分方法
+
+```
+# 常用的方法
+def main():
+    response = requests.get("https://www.baidu.com")
+
+    print(response.status_code)  # 如果从定向了，也是200，但不是同一个url地址
+
+    try:
+        assert response.status_code == 200
+    except Exception:
+        pass  # 添加到列表，查看那些请求失败了
+    else:
+        print("请求成功")
+        print(response.url)
+        print(response.headers)
+        print(response.request.url)
+        print(response.request.headers)
+```
+
+## url配置
+
+`"https://www.baidu.com/s?wd={}".format("{}填充内容")`
+

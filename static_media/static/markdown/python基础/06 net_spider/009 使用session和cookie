@@ -1,0 +1,5 @@
+- session发送post请求，再使用session获取登陆后的页面
+- headers中添加cookie键值对，值为cookie字符串
+- 添加cookie字典， 和headers=headers，parse=parse一样，添加缺省参数
+- 
+

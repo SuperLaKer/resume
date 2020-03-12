@@ -1,0 +1,28 @@
+参考代码
+
+```
+converter_demo.py
+```
+
+#### 提取url中的参数
+
+```python
+# 转换器
+# 127.0.0.1:5000/goods/123
+# @app.route("/goods/<int:good_id>")
+@app.route("/goods/<int:good_id>")  # 默认是普通的字符串（除了/）
+def goods_detail(goods_id):  # 接收路由中定义的参数
+	"""定义视图函数"""
+    return "good detail page %s" % goods_id
+
+# 参数为int类型，如果url中为其他类型，会报错
+# 可以不写类型，直接写接收参数的名字（形参），默认为字符串
+```
+
+```python
+# 参数的类型
+int 
+float
+path  # 和默认的相似，但也接收斜线
+```
+

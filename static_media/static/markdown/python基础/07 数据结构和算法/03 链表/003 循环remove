@@ -1,0 +1,23 @@
+```python
+    def remove(self, item):  # 首位要找到尾部
+        cur = self._head
+        cur1 = self._head
+        while cur.tail != self._head:  # 说明不是最后一个（尾巴指向头部）
+   
+            if cur.elem == item:  # 找到了
+                if cur == cur1:  # 游标本身 就是head的引用，第一个
+                    self._head = cur1.tail
+                    return
+                else:  # 中间，尾部也相等
+                    cur1.tail = cur.tail
+                    print("find")
+                    return
+            else:  # 没找到
+                cur1 = cur
+                cur = cur.tail
+
+        # 退出循环指向尾部
+        if cur.elem == item:
+            cur1.tail = self._head
+```
+

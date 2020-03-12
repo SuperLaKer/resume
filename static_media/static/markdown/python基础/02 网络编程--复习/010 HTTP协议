@@ -1,0 +1,37 @@
+#### 基于tcp
+
+- 浏览器和服务器之间的传输协议是HTTP
+
+- `Response Headers`
+- `Response body`
+
+#### 服务器基本流程
+
+```
+def main():
+    # 创建套接字
+    tcp_server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    # 绑定（服务器固定端口和ip）
+    tcp_server_socket.bind(("", 80))
+
+    # 监听，三次握手，四次挥手，在这里完成
+    tcp_server_socket.listen(128)
+
+    while True:  # 循环监听
+        # 等待新客户端连接, (client_addr:元组)
+        server_socket, client_addr = tcp_server_socket.accept()
+    
+        # 收数据（服务器，先收数据，请求报文）
+        recv_data = server_socket.recv(1024)
+        print(recv_data)
+        
+        # 发送数据
+        server_socket.send("lalal".encode("utf-8"))  # 指定编码，系统转换为网络bytes
+        
+        # 关闭server_socket
+        server_socket.close()
+
+
+```
+

@@ -1,0 +1,12 @@
+`which python`
+
+```
+#! /usr/bin/python3
+
+import ...
+```
+
+```
+chmod +x xxx.py
+```
+

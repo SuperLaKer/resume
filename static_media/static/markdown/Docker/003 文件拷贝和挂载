@@ -1,0 +1,27 @@
+和Windows共享
+
+```
+docker run -v d:/docker_data:/data ubuntu ls /data
+docker run -id --name=ubuntu1 -v d:/docker_data:/data ubuntu
+apt-get update
+```
+
+#### 宿主机和容器交换文件
+
+```
+# 宿主机拷贝到容器
+docker cp file_name 容器名字:/home
+
+# 容器拷贝到宿主机
+docker cp 容器名字:/home/file_name ./file_rename
+```
+
+#### 挂载（宿主机目录---映射到--->容器中）
+
+```
+docker run -id --name=can_name  -v  宿主机目录:cans_file  images:TAG
+
+# 目录权限
+docker run -id --name=can_name  -v  宿主机目录:cans_file  --privileged=true  images:TAG  
+```
+

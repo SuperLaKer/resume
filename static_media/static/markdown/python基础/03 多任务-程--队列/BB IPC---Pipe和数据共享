@@ -1,0 +1,73 @@
+#### 管道
+
+- 数据不安全
+- 加锁
+- 多个消费者同时在管道取数据，必须加锁，否则会异常
+- 队列：是基于管道 + 锁的
+- 队列：数据安全
+
+```python
+from multiprocessing import Pipe, Process
+
+def main():
+    conn1, con2 = Pipe()
+
+    conn1.send("conn1_send")
+    print(con2.recv())
+
+    con2.send("conn2_send")
+    print(conn1.recv())  # str
+
+
+if __name__ == '__main__':
+    main()
+
+```
+
+#### 进程之间的数据共享
+
+```python
+def work(d, lock):
+    with lock:  # 不加锁而操作共享的数据,肯定会出现数据错乱
+        d['count'] -= 1
+
+if __name__ == '__main__':
+    lock = Lock()
+    m = Manager()
+    dic = m.dict({'count': 100})
+    p_l = []
+    for i in range(50):
+        p = Process(target=work, args=(dic, lock))
+        p_l.append(p)
+        p.start()
+    for p in p_l:
+        p.join()
+    print(dic)
+```
+
+```python
+# 类似于管道：多态机器之间数据共享
+kafak
+rebbitmq
+memcache
+消息中间件
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

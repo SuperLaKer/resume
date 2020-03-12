@@ -1,0 +1,25 @@
+#### 
+
+- 进程三种状态：就绪  运行  阻塞
+- 同步阻塞，异步阻塞
+- `子进程.join()`：感知  该子进程  的结束
+
+```
+from multiprocess import Process  # 从包中导入类
+import threading  # 包
+
+def func(i):
+    print(i * "*")
+
+
+if __name__ == '__main__':
+    p_lst = []
+    for i in range(10):
+        p = multiprocessing.Process(target=func, args=(i,))
+        p_lst.append(p)
+        p.start()
+    for x in p_lst:
+        x.join()  # 等十个进程都执行完成了
+    print("完成")
+```
+

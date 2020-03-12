@@ -1,0 +1,30 @@
+#### 创建ssh
+
+```
+# 创建私钥和公钥
+ssh-keygen -t rsa -C "944162982@QQ.COM"
+
+GIT_HOME = D:\Porgram Files\Git
+D:\Porgram Files\Git\bin
+D:\Porgram Files\Git\usr\bin
+
+# 进入目录，把公钥添加到github
+```
+
+#### 克隆项目
+
+```
+# .git 文件在项目目录中
+git clone 地址
+git clone git@github.com:SuperLaKer/test1.git
+```
+
+如果出错
+
+```
+执行：eval "$(ssh-agent -s)"
+回应：Agent pid 110242
+执行：ssh-add
+回应：Indetity added:/home/lla/.ssh/id_rsa (/home/lla/.ssh/id_rsa)：
+```
+

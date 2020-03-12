@@ -1,0 +1,33 @@
+```
+request.POST
+request.body：存放的是原生数据
+
+# post请求
+ contentType == "urlencoded"
+ 	reuqest.POST={}  # 有值
+# get请求
+	request.Get
+```
+
+
+
+```
+pip install django
+pip install djangorestframework
+```
+
+```
+model_to_dict()
+查询对象放进去，转化为字典
+```
+
+#### 序列化类Serilizer.py
+
+```python
+from django.core import serializers  # django自带的序列化
+from django.forms.models import model_to_dict  # 查询集直接转化为字典
+
+from rest_framework.serializers import Serializer  # 简单model的序列化，没有外键
+from rest_framework.serializers import ModelSerializer  # 外键model序列化
+```
+

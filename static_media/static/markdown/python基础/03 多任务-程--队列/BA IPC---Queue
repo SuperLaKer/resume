@@ -1,0 +1,90 @@
+#### 队列
+
+- `from multiprocessing import Queue`
+
+```python
+def main0():
+    q = multiprocessing.Queue(5)
+    q.put(1)
+    q.put(2)
+    q.put(3)
+    q.put(4)
+    q.put(5)
+    # q.put(6)  # 阻塞
+
+    print(q.empty())  # False
+    print(q.full())  # True，不完全准确，另一个进程可能放入进程
+
+    while q.empty() is False:
+        print(q.get_nowait())  # 没有数据不会阻塞，但会抛出异常，捕获异常--pass
+```
+
+#### 生产者消费者
+
+- 解决了生产和消费之间的过剩或不足的问题
+- 利用队列：队列里面有多少，可以取走多少（get）。队列满了，不能put（生产）
+
+#### 可感知队列JoinableQueue
+
+- `jq = mulitprocessing.JoinableQueue()`
+  - `jq.put()`    `jq.join()`  # 感知任务完成，结束进程
+  - `jq.get()`	`jq.task_done()`  # done计数器，没执行一次done
+  - 生产和消费设置为守护进程
+  - 主进程可以感知生产进程的结束，然后结束主进程
+
+```python
+def Worker(q):
+    for i in range(10):
+        time.sleep(random.random())
+
+        print("worker---" + str(i))
+        q.put(i)
+    q.join()
+
+
+def Consumer(q):
+    while True:
+        time.sleep(0.1)
+        timer = str(q.get())
+        print("Haver---" + timer)
+        q.task_done()
+
+
+def main():
+    q = JoinableQueue(10)
+    w = Process(target=Worker, args=(q,))
+    w.daemon = True
+    w.start()
+
+    c = Process(target=Consumer, args=(q,))
+    c.daemon = True
+    c.start()
+    w.join()
+
+
+if __name__ == '__main__':
+    main()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

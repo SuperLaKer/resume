@@ -1,0 +1,31 @@
+#### ASCII
+
+- 一个字符占用 1字节，每位使用0和1表示，2^8 共有256个情况（字符）
+- python2
+
+#### unicode编码
+
+- `UTF-8`使用1~6个字节 表示一个`utf-8`字符，2^(8*6)，几乎包含地球所有文字
+- 大多数汉字使用3个字符表示
+- `python3`使用`utf-8`
+
+- `u"hello world"`  遍历时使用，说明：字符串采用了utf-8编码
+
+#### os包，文件操作
+
+```
+rename  # 重命名文件, os.rename(old_name， new_name)
+remove  # 删除文件  , os.remove(file_name)
+```
+
+#### 目录操作
+
+```
+listdir  # 目录文件列表, list = os.listdir(dir_name)
+mkdir    # 创建目录, os.mkdir(dir_name)
+rmdir    # 删除目录
+getcwd   # get_current_work_dir  , os.getcwd()
+chdir    # 修改工作目录, go to  ,os.chdir(路径/文件夹)
+path.isdir  # 判断文件是否是dir   os.path.isdir(路径/文件名)
+```
+

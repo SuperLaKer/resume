@@ -1,0 +1,14 @@
+多个页面，选择那个页面，那个页面变红
+
+```
+return reder(request, 'user_center_info.html', {'page'：'user'})
+return reder(request, 'user_center_order.html', {'page'：'order'})
+return reder(request, 'user_center_site.html', {'page'：'address'})
+```
+
+```
+{% if page == 'user' %}class="active"{% endif %}
+{% if page == 'order' %}class="active"{% endif %}
+{% if page == 'address' %}class="active"{% endif %}
+```
+

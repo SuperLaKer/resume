@@ -1,0 +1,37 @@
+#### json
+
+- 第一种方式：Context-Type : text/html
+- 第二种直接传dict：context-type : text/json  （推荐使用）
+
+```python
+# 使用dumps转化
+class JsonHandler(RequestHandler):
+
+    def get(self, *args, **kwargs):
+        json_dict = {
+            "name": "slk",
+            "age": 18,
+            "height": 170,
+            "weight": 70
+        }
+		import json
+        json_data = json.dumps(json_dict)
+        self.write(json_data)
+```
+
+```python
+# 不用转化为json字符串
+class JsonHandler(RequestHandler):
+
+    def get(self, *args, **kwargs):
+        dict = {
+            "name": "slk",
+            "age": 18,
+            "height": 170,
+            "weight": 70
+        }
+
+        self.write(dict)  # 直接写字典
+
+```
+
